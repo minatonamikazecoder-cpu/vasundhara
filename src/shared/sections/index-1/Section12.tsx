@@ -78,13 +78,13 @@ export default function Section12() {
                         <div className="col-12">
                             <div className="d-flex justify-content-between align-items-center flex-wrap gap-3">
                                 <div className="at-header-logo">
-                                    <Link to="/" className="d-inline-flex align-items-center gap-2 text-decoration-none">
+                                    <Link to="/" className="d-inline-flex align-items-center gap-1 text-decoration-none">
                                         <img
-                                            src="/assets/imgs/template/logo/favicon.png"
+                                            src="/assets/imgs/template/logo/logo-mark.png"
                                             alt="Vasundhara Logo"
                                             className="invert-0"
                                             style={{ 
-                                                height: "40px", 
+                                                height: "28px", 
                                                 width: "auto", 
                                                 objectFit: "contain"
                                             }}
@@ -142,12 +142,12 @@ export default function Section12() {
                                         {ARROW_SVG}
                                     </i>
                                 </Link>
-                                <span className="common-white fz-font-sm">[ Mon - Sat ]</span>
+                                <span className="common-white fz-font-sm">Mon - Sat</span>
                             </div>
                         </div>
                         <div className="col-lg-5 col-md-12 ms-auto">
                             <p className="common-white fz-font-md opacity-75 mb-0 text-start text-lg-end">
-                                [ A financial consulting firm facilitating tailor-made loan options. At Vasundhara, we blend expert consultation, quick approvals, and trusted bank tie-ups to help you grow. ]
+                                A financial consulting firm facilitating tailor-made loan options. At Vasundhara, we blend expert consultation, quick approvals, and trusted bank tie-ups to help you grow.
                             </p>
                         </div>
                     </div>

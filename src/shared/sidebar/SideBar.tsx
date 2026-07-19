@@ -117,12 +117,12 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
         <div className={`at-offcanvas ${open ? "opened" : ""}`}>
           <div className="at-offcanvas-top d-flex align-items-center justify-content-between">
             <div className="at-offcanvas-logo">
-              <Link to="/" className="text-decoration-none d-inline-flex align-items-center gap-2">
+              <Link to="/" className="text-decoration-none d-inline-flex align-items-center gap-1">
                 <img 
-                  src="/assets/imgs/template/logo/favicon.png" 
+                  src="/assets/imgs/template/logo/logo-mark.png" 
                   alt="Vasundhara Logo" 
                   className="invert-0"
-                  style={{ height: "45px", width: "auto", objectFit: "contain" }} 
+                  style={{ height: "32px", width: "auto", objectFit: "contain" }} 
                   loading="lazy" 
                 />
                 <div className="d-flex flex-column lh-1">
@@ -218,12 +218,12 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
         <div className="at-offcanvas-2-wrapper offcanvas-menu sidebar-left">
           <div className="at-offcanvas-2-left">
             <div className="at-header-logo d-flex justify-content-between align-items-center mb-50">
-              <Link to="/" className="text-decoration-none d-inline-flex align-items-center gap-2">
+              <Link to="/" className="text-decoration-none d-inline-flex align-items-center gap-1">
                 <img
-                  src="/assets/imgs/template/logo/favicon.png"
+                  src="/assets/imgs/template/logo/logo-mark.png"
                   alt="Vasundhara Logo"
                   className="invert-0"
-                  style={{ height: "45px", width: "auto", objectFit: "contain" }}
+                  style={{ height: "32px", width: "auto", objectFit: "contain" }}
                   loading="lazy"
                 />
                 <div className="d-flex flex-column lh-1">

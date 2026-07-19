@@ -63,13 +63,13 @@ export default function Footer1() {
           <div className="row g-5">
             <div className="col-xxl-4 col-lg-6">
               <div className="d-flex flex-column align-items-start gap-4">
-                <div className="d-inline-flex align-items-center gap-2">
+                <div className="d-inline-flex align-items-center gap-1">
                   <img
-                    src="/assets/imgs/template/logo/favicon.png"
+                    src="/assets/imgs/template/logo/logo-mark.png"
                     alt="Vasundhara Logo"
                     className="invert-0"
                     style={{ 
-                      height: "45px", 
+                      height: "32px", 
                       width: "auto", 
                       objectFit: "contain"
                     }}

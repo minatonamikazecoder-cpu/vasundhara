@@ -66,13 +66,13 @@ export default function Section11({ classList = "" }: { classList?: string }) {
                                  data-fade-from="bottom"
                                  data-ease="bounce"
                              >
-                                 <Link className="at-btn-circle" to="/contact">
+                                 <Link className="at-btn-circle" to="/contact" aria-label="Contact Us">
                                      {BTN_CIRCLE_ARROW_SVG}
                                  </Link>
                                  <Link className="at-btn z-index-1" to="/contact">
                                      Contact Us
                                  </Link>
-                                 <Link className="at-btn-circle" to="/contact">
+                                 <Link className="at-btn-circle" to="/contact" aria-label="Contact Us">
                                      {BTN_CIRCLE_ARROW_SVG}
                                  </Link>
                              </div>

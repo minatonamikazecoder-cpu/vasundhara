@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import RevealText from "@/shared/effects/RevealText";
 
@@ -42,6 +43,8 @@ const STAT_SVG_2 = (
 );
 
 export default function Section7() {
+    const [isHovered1, setIsHovered1] = useState(false);
+    const [isHovered2, setIsHovered2] = useState(false);
     return (
         <div className="container-2200">
             {/* at-sec7-area-start */}
@@ -87,9 +90,9 @@ export default function Section7() {
                                             width={600}
                                             height={400} loading="lazy" />
                                     </div>
-                                    <div className="p-absolute bottom-0 start-0 m-4 d-inline-flex align-items-center gap-2 bg-dark bg-opacity-75 px-3 py-2 rounded-3 border border-secondary" style={{ backdropFilter: "blur(10px)" }}>
+                                    <div className="p-absolute bottom-0 start-0 m-4 d-inline-flex align-items-center gap-1 bg-dark bg-opacity-75 px-3 py-2 rounded-3 border border-secondary" style={{ backdropFilter: "blur(10px)" }}>
                                         <img
-                                            src="/assets/imgs/template/logo/favicon.png"
+                                            src="/assets/imgs/template/logo/logo-mark.png"
                                             alt="Vasundhara Logo"
                                             className="invert-0"
                                             style={{ width: "24px", height: "auto", objectFit: "contain" }} 
@@ -131,7 +134,7 @@ export default function Section7() {
                             </div>
                         </div>
                         <div className="col-xxl-6 col-lg-8 ms-auto">
-                            <div className="row g-2">
+                            <div className="row g-4">
                                 <div className="col-lg-7 col-md-8 col-12">
                                     <h6 className="reveal-text neutral-800 mb-60">
                                         <RevealText>
@@ -140,46 +143,104 @@ export default function Section7() {
                                     </h6>
                                 </div>
                                 <div className="col-md-6 col-12">
-                                    <div className="hover-unborder">
-                                        <div className="bg-neutral-0 rounded-4 px-5 py-3">
-                                            <h4 className="mb-0">
-                                                <span>50+ Cr</span>
-                                            </h4>
+                                    <div 
+                                        className="h-100 bg-neutral-0 rounded-4 p-4 p-md-5 d-flex flex-column justify-content-between border"
+                                        style={{
+                                            transition: "all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)",
+                                            transform: isHovered1 ? "translateY(-6px)" : "translateY(0)",
+                                            boxShadow: isHovered1 ? "0 15px 35px rgba(27, 129, 137, 0.12)" : "0 4px 15px rgba(0, 0, 0, 0.03)",
+                                            borderColor: isHovered1 ? "var(--at-theme-primary)" : "var(--at-neutral-100)",
+                                            cursor: "default"
+                                        }}
+                                        onMouseEnter={() => setIsHovered1(true)}
+                                        onMouseLeave={() => setIsHovered1(false)}
+                                    >
+                                        <div>
+                                            <div className="d-flex justify-content-between align-items-center mb-4">
+                                                <div 
+                                                    className="d-flex align-items-center justify-content-center rounded-3 text-white" 
+                                                    style={{ 
+                                                        width: "52px", 
+                                                        height: "52px", 
+                                                        background: "var(--at-gradient-primary)",
+                                                        boxShadow: "0 4px 10px rgba(27, 129, 137, 0.2)"
+                                                    }}
+                                                >
+                                                    {STAT_SVG_1}
+                                                </div>
+                                                <h3 className="mb-0 fw-bold" style={{ color: "var(--at-theme-primary)", letterSpacing: "-0.5px" }}>
+                                                    50+ Cr
+                                                </h3>
+                                            </div>
+                                            <h5 className="fw-600 mb-3 text-neutral-900">
+                                                Disbursed Capital
+                                            </h5>
+                                            <p className="fz-font-lg mb-4 text-neutral-500" style={{ lineHeight: "1.6" }}>
+                                                Successfully disbursed over 50 Crores in funding, enabling local businesses, industrial ventures, and families to achieve their financial aspirations.
+                                            </p>
                                         </div>
-                                        <div className="bg-neutral-0 rounded-4 p-5 mt-2">
-                                            <h6 className="text-end mb-0">
-                                                Disbursed
-                                                <br />
-                                                Loans
-                                            </h6>
-                                            <div className="pt-150">
-                                                {STAT_SVG_1}
-                                                <p className="fz-font-lg mt-3 mb-0">
-                                                    Successfully disbursed over 50 Crores in funding, enabling local businesses, industrial ventures, and families to achieve their financial aspirations.
-                                                </p>
+                                        <div className="border-top pt-4 mt-auto">
+                                            <div className="row g-2">
+                                                <div className="col-6">
+                                                    <span className="d-block text-uppercase text-muted fw-bold" style={{ fontSize: "10px", letterSpacing: "0.5px" }}>Focus Area</span>
+                                                    <span className="fw-600 text-neutral-800" style={{ fontSize: "14px" }}>MSME & Machinery</span>
+                                                </div>
+                                                <div className="col-6">
+                                                    <span className="d-block text-uppercase text-muted fw-bold" style={{ fontSize: "10px", letterSpacing: "0.5px" }}>Process</span>
+                                                    <span className="fw-600 text-neutral-800" style={{ fontSize: "14px" }}>Fast Track Approval</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-12">
-                                    <div className="hover-unborder">
-                                        <div className="bg-neutral-0 rounded-4 p-5 mb-2">
-                                            <h6 className="text-end mb-0">
-                                                Banking
-                                                <br />
-                                                Partners
-                                            </h6>
-                                            <div className="pt-150">
-                                                {STAT_SVG_2}
-                                                <p className="fz-font-lg mt-3 mb-0">
-                                                    Connected with over 10 premier national banks and NBFCs, ensuring our clients receive a wide selection of competitive loan options and structures.
-                                                </p>
+                                    <div 
+                                        className="h-100 bg-neutral-0 rounded-4 p-4 p-md-5 d-flex flex-column justify-content-between border"
+                                        style={{
+                                            transition: "all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)",
+                                            transform: isHovered2 ? "translateY(-6px)" : "translateY(0)",
+                                            boxShadow: isHovered2 ? "0 15px 35px rgba(27, 129, 137, 0.12)" : "0 4px 15px rgba(0, 0, 0, 0.03)",
+                                            borderColor: isHovered2 ? "var(--at-theme-primary)" : "var(--at-neutral-100)",
+                                            cursor: "default"
+                                        }}
+                                        onMouseEnter={() => setIsHovered2(true)}
+                                        onMouseLeave={() => setIsHovered2(false)}
+                                    >
+                                        <div>
+                                            <div className="d-flex justify-content-between align-items-center mb-4">
+                                                <div 
+                                                    className="d-flex align-items-center justify-content-center rounded-3 text-white" 
+                                                    style={{ 
+                                                        width: "52px", 
+                                                        height: "52px", 
+                                                        background: "var(--at-gradient-primary)",
+                                                        boxShadow: "0 4px 10px rgba(27, 129, 137, 0.2)"
+                                                    }}
+                                                >
+                                                    {STAT_SVG_2}
+                                                </div>
+                                                <h3 className="mb-0 fw-bold" style={{ color: "var(--at-theme-primary)", letterSpacing: "-0.5px" }}>
+                                                    10+
+                                                </h3>
                                             </div>
+                                            <h5 className="fw-600 mb-3 text-neutral-900">
+                                                Banking Network
+                                            </h5>
+                                            <p className="fz-font-lg mb-4 text-neutral-500" style={{ lineHeight: "1.6" }}>
+                                                Connected with over 10 premier national banks and NBFCs, ensuring our clients receive a wide selection of competitive loan options and structures.
+                                            </p>
                                         </div>
-                                        <div className="bg-neutral-0 rounded-4 px-5 py-3">
-                                            <h4 className="mb-0">
-                                                <span>10+</span>
-                                            </h4>
+                                        <div className="border-top pt-4 mt-auto">
+                                            <div className="row g-2">
+                                                <div className="col-6">
+                                                    <span className="d-block text-uppercase text-muted fw-bold" style={{ fontSize: "10px", letterSpacing: "0.5px" }}>Lenders</span>
+                                                    <span className="fw-600 text-neutral-800" style={{ fontSize: "14px" }}>Top National Banks</span>
+                                                </div>
+                                                <div className="col-6">
+                                                    <span className="d-block text-uppercase text-muted fw-bold" style={{ fontSize: "10px", letterSpacing: "0.5px" }}>Benefit</span>
+                                                    <span className="fw-600 text-neutral-800" style={{ fontSize: "14px" }}>Multi-Lender Choice</span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

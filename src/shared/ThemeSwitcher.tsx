@@ -21,7 +21,7 @@ const ThemeSwitcher = () => {
 
   return (
     <label htmlFor="switch" className="toggle dark-light-switcher">
-      <input type="checkbox" className="input" id="switch" checked={isDark} onChange={toggleTheme} />
+      <input type="checkbox" className="input" id="switch" aria-label="Toggle dark/light theme" checked={isDark} onChange={toggleTheme} />
       <div className="icon icon--moon">{MOON_SVG}</div>
       <div className="icon icon--sun">{SUN_SVG}</div>
     </label>

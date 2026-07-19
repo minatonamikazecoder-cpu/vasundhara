@@ -1,40 +1,44 @@
 import { Outlet } from "react-router-dom";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, lazy, Suspense } from "react";
 import PopupSearch from "@/shared/PopupSearch";
 import Header1 from "@/shared/header/Header1";
-import Header2 from "@/shared/header/Header2";
-import Header3 from "@/shared/header/Header3";
-import Header4 from "@/shared/header/Header4";
-import Header5 from "@/shared/header/Header5";
-import Header7 from "@/shared/header/Header7";
-import Header8 from "@/shared/header/Header8";
-import Header9 from "@/shared/header/Header9";
-import Header10 from "@/shared/header/Header10";
-import Header12 from "@/shared/header/Header12";
-import Header13 from "@/shared/header/Header13";
-import Header14 from "@/shared/header/Header14";
-import Header15 from "@/shared/header/Header15";
 import Footer1 from "@/shared/footer/Footer1";
-import Footer2 from "@/shared/footer/Footer2";
-import Footer3 from "@/shared/footer/Footer3";
-import Footer4 from "@/shared/footer/Footer4";
-import Footer5 from "@/shared/footer/Footer5";
-import Footer6 from "@/shared/footer/Footer6";
-import Footer7 from "@/shared/footer/Footer7";
-import Footer8 from "@/shared/footer/Footer8";
-import Footer9 from "@/shared/footer/Footer9";
-import Footer10 from "@/shared/footer/Footer10";
-import Footer11 from "@/shared/footer/Footer11";
-import Footer12 from "@/shared/footer/Footer12";
-import Footer13 from "@/shared/footer/Footer13";
-import Footer14 from "@/shared/footer/Footer14";
-import Footer15 from "@/shared/footer/Footer15";
 import SideBar from "@/shared/sidebar/SideBar";
 import { MobileMenuCloneProvider } from "@/shared/mobile-menu/MobileMenuCloneContext";
 import GlobalEffects from "@/shared/effects/GlobalEffects";
 import ThemeRouteSync from "@/shared/effects/ThemeRouteSync";
 import BackToTop from "@/shared/elements/BackToTop";
 import SmoothScrollEffect from "@/shared/effects/SmoothScrollEffect";
+
+// Lazy load unused headers to keep main bundle size minimal
+const Header2 = lazy(() => import("@/shared/header/Header2"));
+const Header3 = lazy(() => import("@/shared/header/Header3"));
+const Header4 = lazy(() => import("@/shared/header/Header4"));
+const Header5 = lazy(() => import("@/shared/header/Header5"));
+const Header7 = lazy(() => import("@/shared/header/Header7"));
+const Header8 = lazy(() => import("@/shared/header/Header8"));
+const Header9 = lazy(() => import("@/shared/header/Header9"));
+const Header10 = lazy(() => import("@/shared/header/Header10"));
+const Header12 = lazy(() => import("@/shared/header/Header12"));
+const Header13 = lazy(() => import("@/shared/header/Header13"));
+const Header14 = lazy(() => import("@/shared/header/Header14"));
+const Header15 = lazy(() => import("@/shared/header/Header15"));
+
+// Lazy load unused footers
+const Footer2 = lazy(() => import("@/shared/footer/Footer2"));
+const Footer3 = lazy(() => import("@/shared/footer/Footer3"));
+const Footer4 = lazy(() => import("@/shared/footer/Footer4"));
+const Footer5 = lazy(() => import("@/shared/footer/Footer5"));
+const Footer6 = lazy(() => import("@/shared/footer/Footer6"));
+const Footer7 = lazy(() => import("@/shared/footer/Footer7"));
+const Footer8 = lazy(() => import("@/shared/footer/Footer8"));
+const Footer9 = lazy(() => import("@/shared/footer/Footer9"));
+const Footer10 = lazy(() => import("@/shared/footer/Footer10"));
+const Footer11 = lazy(() => import("@/shared/footer/Footer11"));
+const Footer12 = lazy(() => import("@/shared/footer/Footer12"));
+const Footer13 = lazy(() => import("@/shared/footer/Footer13"));
+const Footer14 = lazy(() => import("@/shared/footer/Footer14"));
+const Footer15 = lazy(() => import("@/shared/footer/Footer15"));
 
 type HeaderHandlers = {
   onOpenSearch?: () => void;
@@ -181,12 +185,14 @@ export default function MainLayout({
       <SmoothScrollEffect />
       <GlobalEffects />
       <ThemeRouteSync />
-      <HeaderComponent
-        {...(headerProps ?? {})}
-        onOpenSearch={handlers.openSearch}
-        onToggleSidebar={handlers.toggleSidebar}
-        onOpenHamburgerMenu={handlers.openHamburgerMenu}
-      />
+      <Suspense fallback={null}>
+        <HeaderComponent
+          {...(headerProps ?? {})}
+          onOpenSearch={handlers.openSearch}
+          onToggleSidebar={handlers.toggleSidebar}
+          onOpenHamburgerMenu={handlers.openHamburgerMenu}
+        />
+      </Suspense>
       <SideBar open={sidebarOpen} hamburgerOpen={hamburgerMenuOpen} onClose={handlers.closeAllMenus} />
       <PopupSearch open={searchOpen} onClose={handlers.closeSearch} />
 
@@ -196,9 +202,17 @@ export default function MainLayout({
             <Outlet />
           </main>
           {!noFooter && isFooterFloating ? <div className="footer-placeholder" aria-hidden="true" /> : null}
-          {!noFooter && !isFooterFloating ? <FooterComponent /> : null}
+          {!noFooter && !isFooterFloating ? (
+            <Suspense fallback={null}>
+              <FooterComponent />
+            </Suspense>
+          ) : null}
         </div>
-        {!noFooter && isFooterFloating ? <Footer2 ref={footerRef} /> : null}
+        {!noFooter && isFooterFloating ? (
+          <Suspense fallback={null}>
+            <Footer2 ref={footerRef} />
+          </Suspense>
+        ) : null}
       </div>
 
       <BackToTop />

@@ -3686,6 +3686,20 @@ input[type=color] {
 .at-main-menu > nav > ul > li:hover > a .at-link-swap .text-2 {
   transform: translateY(0);
 }
+.at-main-menu.menu-light nav ul li a {
+  color: #fff !important;
+}
+.at-main-menu.menu-light nav ul li a:hover,
+.at-main-menu.menu-light nav ul li a.active {
+  color: #fff !important;
+}
+.at-main-menu.menu-dark nav ul li a {
+  color: var(--at-common-black) !important;
+}
+.at-main-menu.menu-dark nav ul li a:hover,
+.at-main-menu.menu-dark nav ul li a.active {
+  color: var(--at-color-primary, #0F0F0F) !important;
+}
 
 /*----------------------------------------*/
 /*  4.3 offcanvas scss

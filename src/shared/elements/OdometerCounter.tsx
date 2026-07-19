@@ -35,6 +35,7 @@ export default function OdometerCounter({ count, duration, className, prefix, su
       data-count={targetValue}
       data-duration={duration}
       role="meter"
+      aria-label={`Counter showing ${targetValue}`}
       aria-valuemin={0}
       aria-valuemax={targetValue}
       aria-valuenow={currentValue}
