@@ -1,11 +1,11 @@
 import OdometerCounter from "@/shared/elements/OdometerCounter";
 
 const STATS = [
-    { count: 10, suffix: "K+", label: "Years of Creative Practice" },
-    { count: 50, suffix: "K+", label: "Projects Carefully Crafted" },
-    { count: 16, suffix: "K+", label: "Brands Collaborated With" },
-    { count: 20, suffix: "M+", label: "Total Funding Supported" },
-    { count: 98, suffix: "%", label: "Client satisfaction rate" },
+    { count: 2, suffix: "+", label: "Years of Experience" },
+    { count: 140, suffix: "+", label: "Happy Clients" },
+    { count: 50, suffix: " Cr+", label: "Disbursed Amount" },
+    { count: 10, suffix: "+", label: "Partner Bank Tie-ups" },
+    { count: 99, suffix: "%", label: "Client Satisfaction Rate" },
 ];
 
 export default function Section8() {

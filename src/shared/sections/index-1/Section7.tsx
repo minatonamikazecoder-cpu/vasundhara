@@ -62,8 +62,7 @@ export default function Section7() {
                                 </span>
                                 <h3 className="at-section-title reveal-text mb-80">
                                     <RevealText>
-                                        Delivering measurable results through a strong balance of design excellence and
-                                        functional performance.
+                                        Delivering measurable results through a strong balance of expert consultation and seamless loan approvals.
                                     </RevealText>
                                 </h3>
                             </div>
@@ -84,23 +83,23 @@ export default function Section7() {
                                         <img
                                             className="zoom-blur-image img-cover"
                                             src="/assets/imgs/pages/img-15.webp"
-                                            alt="orisa"
+                                            alt="Financial consulting"
                                             width={600}
                                             height={400} loading="lazy" />
                                     </div>
                                     <img
                                         className="p-absolute bottom-0 start-0 m-4"
-                                        src="/assets/imgs/template/logo/logo-w-lg.svg"
-                                        alt="orisa"
-                                        width={227}
-                                        height={70}
+                                        src="/assets/imgs/template/logo/logo.png"
+                                        alt="Vasundhara Logo"
+                                        width={150}
+                                        height={45}
                                         style={{ width: "auto", height: "auto" }} loading="lazy" />
                                     <div className="content position-absolute top-0 end-0 m-4">
                                         <Link
                                             className="bg-transparent text-uppercase border px-3 py-1 rounded-pill text-white fz-font-label"
                                             to="#"
                                         >
-                                            Creative
+                                            Consulting
                                         </Link>
                                     </div>
                                 </div>
@@ -109,13 +108,13 @@ export default function Section7() {
                                         <img
                                             className="zoom-blur-image img-cover"
                                             src="/assets/imgs/pages/img-16.webp"
-                                            alt="orisa"
+                                            alt="Consulting conversation"
                                             width={600}
                                             height={450} loading="lazy" />
                                     </div>
                                     <div className="content">
                                         <h6 className="common-white position-absolute bottom-0 start-0 m-4">
-                                            Great digital experiences begin with a conversation. Let&apos;s talk.
+                                            Great financial journeys begin with a conversation. Let&apos;s talk.
                                         </h6>
                                     </div>
                                 </div>
@@ -126,9 +125,7 @@ export default function Section7() {
                                 <div className="col-lg-7 col-md-8 col-12">
                                     <h6 className="reveal-text neutral-800 mb-60">
                                         <RevealText>
-                                            Orisa™ goes beyond aesthetics—bringing clarity through motion, flexible
-                                            structure, and practical tools that help you move faster without defining
-                                            your identity.
+                                            Vasundhara goes beyond standard consultancy—bringing speed through premium bank tie-ups, flexible structures, and practical tools that help you secure funding faster without hassle.
                                         </RevealText>
                                     </h6>
                                 </div>
@@ -136,20 +133,20 @@ export default function Section7() {
                                     <div className="hover-unborder">
                                         <div className="bg-neutral-0 rounded-4 px-5 py-3">
                                             <h4 className="d-flex justify-content-between align-items-center mb-0">
-                                                <span>1.8M</span>
+                                                <span>50+ Cr</span>
                                                 <span>+</span>
                                             </h4>
                                         </div>
                                         <div className="bg-neutral-0 rounded-4 p-5 mt-2">
                                             <h6 className="text-end mb-0">
-                                                Active <br />
-                                                live cases
+                                                Disbursed
+                                                <br />
+                                                Capital
                                             </h6>
                                             <div className="pt-150">
                                                 {STAT_SVG_1}
                                                 <p className="fz-font-lg mt-3 mb-0">
-                                                    We always provide people a complete solution upon focused of any
-                                                    business
+                                                    We provide businesses and individuals complete funding solutions tailored to their exact requirements.
                                                 </p>
                                             </div>
                                         </div>
@@ -159,21 +156,20 @@ export default function Section7() {
                                     <div className="hover-unborder">
                                         <div className="bg-neutral-0 rounded-4 p-5 mb-2">
                                             <h6 className="text-end mb-0">
-                                                Trusted
+                                                Bank
                                                 <br />
                                                 Partners
                                             </h6>
                                             <div className="pt-150">
                                                 {STAT_SVG_2}
                                                 <p className="fz-font-lg mt-3 mb-0">
-                                                    Because sometimes the best design is the one you don&apos;t have to
-                                                    think about.
+                                                    Because sometimes the best loan structure is the one that gives you maximum flexibility and minimal interest.
                                                 </p>
                                             </div>
                                         </div>
                                         <div className="bg-neutral-0 rounded-4 px-5 py-3">
                                             <h4 className="d-flex justify-content-between align-items-center mb-0">
-                                                <span>16K</span>
+                                                <span>10+</span>
                                                 <span>+</span>
                                             </h4>
                                         </div>

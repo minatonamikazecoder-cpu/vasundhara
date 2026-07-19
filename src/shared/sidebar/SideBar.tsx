@@ -118,8 +118,8 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
           <div className="at-offcanvas-top d-flex align-items-center justify-content-between">
             <div className="at-offcanvas-logo">
               <Link to="/" className="text-decoration-none d-inline-flex align-items-center gap-2">
-                <img data-width="30" src="/assets/imgs/template/logo/favicon.svg" alt="Orisa" width={30} height={30} />
-                <h6 className="fw-700 fz-24 mb-0">Orisa</h6>
+                <img data-width="40" src="/assets/imgs/template/logo/favicon.png" alt="Vasundhara Logo" width={40} height={40} />
+                <h6 className="fw-700 fz-24 mb-0">Vasundhara</h6>
               </Link>
             </div>
             <div className="at-offcanvas-close-btn">
@@ -130,9 +130,9 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
           </div>
 
           <div className="at-offcanvas-content d-none d-xl-block">
-            <h3 className="at-offcanvas-title">Howdy!</h3>
+            <h3 className="at-offcanvas-title">Welcome!</h3>
             <p className="fz-font-lg">
-              We blend strategy, creativity, and technology to help brands grow, connect, and stand out in an ever-evolving digital world.
+              At Vasundhara Financial Services, we specialize in providing tailored loan solutions, working capital funding, and strategic wealth consultation to help businesses and individuals grow securely.
             </p>
           </div>
 
@@ -154,19 +154,20 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
             <h5 className="at-offcanvas-title sm">Get in touch</h5>
             <ul>
               <li>
-                <a className="fz-font-lg" href="tel:(212) 555-7398">
-                  (212) 555-7398
+                <a className="fz-font-lg" href="tel:+919110424656">
+                  +91 91104 24656
                 </a>
               </li>
               <li>
-                <a className="fz-font-lg" href="mailto:hello@orisa.com">
-                  hello@orisa.com
+                <a className="fz-font-lg" href="mailto:vasundharafs@gmail.com">
+                  vasundharafs@gmail.com
                 </a>
               </li>
               <li>
                 <a className="fz-font-lg" href="#" onClick={(e) => e.preventDefault()}>
-                  245 Fifth Avenue, Suite 1800 <br />
-                  New York, NY 10016, USA
+                  Plot No. 16, Vasundhara, Ground Floor,<br />
+                  Behind ICICI Bank, Near Vyapari Dharamshala,<br />
+                  New Cotton Market, Hubli, Karnataka 580029
                 </a>
               </li>
             </ul>
@@ -188,13 +189,13 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
               <Link to="/" className="text-decoration-none d-inline-flex align-items-center gap-2">
                 <img
                   className="dark-mode-invert"
-                  data-width="30"
-                  src="/assets/imgs/template/logo/favicon.svg"
-                  alt="Orisa"
-                  width={30}
-                  height={30}
+                  data-width="40"
+                  src="/assets/imgs/template/logo/favicon.png"
+                  alt="Vasundhara Logo"
+                  width={40}
+                  height={40}
                 />
-                <h6 className="fw-700 fz-24 mb-0">Orisa</h6>
+                <h6 className="fw-700 fz-24 mb-0">Vasundhara</h6>
               </Link>
               <span className="hamburger-close-btn close-sidebar" role="button" tabIndex={0} aria-label="Close" onClick={onClose}>
                 <CloseIconSvg />

@@ -60,7 +60,7 @@ export default function Section12() {
                 <img
                     data-speed=".4"
                     className="img-cover"
-                    src="/assets/imgs/pages/img-22.webp"
+                    src="/assets/imgs/pages/img-22.png"
                     alt="orisa" loading="lazy" />
             </div>
             <div className="position-absolute top-0 bottom-0 start-0 end-0">
@@ -71,20 +71,20 @@ export default function Section12() {
                                 <div className="at-header-logo">
                                     <Link to="/">
                                         <img
-                                            data-width="30"
-                                            src="/assets/imgs/template/logo/favicon-dark.svg"
-                                            alt="Orisa"
-                                            width={30}
-                                            height={30}
+                                            data-width="40"
+                                            src="/assets/imgs/template/logo/favicon.png"
+                                            alt="Vasundhara Logo"
+                                            width={40}
+                                            height={40}
                                             style={{ width: "auto", height: "auto" }} loading="lazy" />
-                                        <h6 className="fw-700 fz-24 text-white mb-0">Orisa</h6>
+                                        <h6 className="fw-700 fz-24 text-white mb-0">Vasundhara</h6>
                                     </Link>
                                 </div>
                                 <Link
                                     className="bg-transparent border px-3 py-1 rounded-pill common-white fz-font-lg"
                                     to="#"
                                 >
-                                    Local time: 12:30
+                                    Hours: 9:30 AM - 6:30 PM
                                 </Link>
                             </div>
                         </div>
@@ -92,7 +92,7 @@ export default function Section12() {
                     <div className="row pt-250 align-items-end">
                         <div className="col-lg-5 col-md-6">
                             <h2 className="common-white">
-                                Let&apos;s Create <br /> Meaning Together
+                                Let&apos;s Secure <br /> Your Financial Future
                             </h2>
                             <div className="d-flex gap-4 align-items-center pt-30">
                                 <Link
@@ -100,21 +100,20 @@ export default function Section12() {
                                     to="/contact"
                                 >
                                     <span>
-                                        <span className="text-1">Book A Call Now</span>
-                                        <span className="text-2">Book A Call Now</span>
+                                        <span className="text-1">Apply For Loan</span>
+                                        <span className="text-2">Apply For Loan</span>
                                     </span>
                                     <i>
                                         {ARROW_SVG}
                                         {ARROW_SVG}
                                     </i>
                                 </Link>
-                                <span className="common-white fz-font-sm">[ From 8:00 To 16:30 ]</span>
+                                <span className="common-white fz-font-sm">[ Mon - Sat ]</span>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 ms-auto text-end">
                             <span className="common-white fz-font-lg">
-                                [ A creative studio crafting bold, user-focused digital experiences. At Orisa, we blend
-                                strategy, design, and innovation to help brands stand out and grow. ]
+                                [ A financial consulting firm facilitating tailor-made loan options. At Vasundhara, we blend expert consultation, quick approvals, and trusted bank tie-ups to help you grow. ]
                             </span>
                         </div>
                     </div>

@@ -9,11 +9,11 @@ const TESTIMONIAL_SOURCES = [
         logo: "/assets/imgs/icons/brand-7.webp",
         logoWidth: 86,
         logoHeight: 25,
-        name: "Amelia Wright",
-        position: "Head of Marketing",
-        company: "London United Kingdom",
+        name: "Rajesh Kulkarni",
+        position: "Managing Director",
+        company: "Kulkarni Manufacturing, Hubli",
         comment:
-            "They delivered not just a design, but a complete brand experience. Strategic, creative, and incredibly detail-oriented.",
+            "Vasundhara Financial Services secured our machinery loan of 2.5 Cr in record time. Excellent coordination and transparency.",
     },
     {
         starColor: "#585959",
@@ -21,11 +21,11 @@ const TESTIMONIAL_SOURCES = [
         logo: "/assets/imgs/icons/brand-8.webp",
         logoWidth: 101,
         logoHeight: 25,
-        name: "Lucas Moreno",
-        position: "Product Manager",
-        company: "Barcelona, Spain",
+        name: "Deepa Patil",
+        position: "Homeowner",
+        company: "Dharwad",
         comment:
-            "The collaboration was seamless from start to finish. Their UX decisions significantly improved our product engagement.",
+            "Hassle-free housing loan assistance. The advisors at Vasundhara walked us through every step and got us the best interest rates.",
     },
     {
         starColor: "#FFB618",
@@ -33,11 +33,11 @@ const TESTIMONIAL_SOURCES = [
         logo: "/assets/imgs/icons/brand-9.webp",
         logoWidth: 119,
         logoHeight: 25,
-        name: "Hannah Lee",
-        position: "Creative Director",
-        company: "Studio Kinetic",
+        name: "Amit Desai",
+        position: "Founder & CEO",
+        company: "Desai Tech Solutions",
         comment:
-            "A rare combination of technical expertise and artistic vision. The final result felt premium and purposeful.",
+            "We were looking for working capital and unsecured funding. Vasundhara made the bank approval process seamless. Highly recommended!",
     },
 ];
 
@@ -129,7 +129,7 @@ export default function Section6() {
                             </SwiperDynamic>
                         </div>
                         <div className="col-12 text-center pt-50 z-index-1">
-                            <Link to="mailto:hello@orisa.com" className="at-btn bg-transparent p-relative">
+                            <Link to="mailto:vasundharafs@gmail.com" className="at-btn bg-transparent p-relative">
                                 <img
                                     className="badge-zoon-in"
                                     src="/assets/imgs/icons/badge-2.svg"

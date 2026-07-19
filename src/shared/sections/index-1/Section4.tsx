@@ -8,21 +8,21 @@ const ARROW_SVG = (
 );
 
 const SERVICE_IMAGES = [
-    "/assets/imgs/pages/img-5.webp",
-    "/assets/imgs/pages/img-6.webp",
-    "/assets/imgs/pages/img-7.webp",
-    "/assets/imgs/pages/img-8.webp",
-    "/assets/imgs/pages/img-9.webp",
-    "/assets/imgs/pages/img-10.webp",
+    "/assets/imgs/pages/img-5.png",
+    "/assets/imgs/pages/img-6.png",
+    "/assets/imgs/pages/img-7.png",
+    "/assets/imgs/pages/img-8.png",
+    "/assets/imgs/pages/img-9.png",
+    "/assets/imgs/pages/img-10.png",
 ];
 
 const SERVICES = [
-    { num: "01", title: "UI/UX Design", text: "We help you build successful products by understanding your market and users.", thumb: "/assets/imgs/pages/img-5-sm.webp" },
-    { num: "02", title: "Branding", text: "We help you build successful products by understanding your market and users.", thumb: "/assets/imgs/pages/img-6-sm.webp" },
-    { num: "03", title: "Development", text: "We help you build successful products by understanding your market and users.", thumb: "/assets/imgs/pages/img-7-sm.webp" },
-    { num: "04", title: "3D Animations", text: "We help you build successful products by understanding your market and users.", thumb: "/assets/imgs/pages/img-8-sm.webp" },
-    { num: "05", title: "Marketing", text: "We help you build successful products by understanding your market and users.", thumb: "/assets/imgs/pages/img-9-sm.webp" },
-    { num: "06", title: "Graphics", text: "We help you build successful products by understanding your market and users.", thumb: "/assets/imgs/pages/img-10-sm.webp" },
+    { num: "01", title: "Home Loan", text: "Turn your homeownership dreams into reality with low interest rates and flexible tenures.", thumb: "/assets/imgs/pages/img-5-sm.png" },
+    { num: "02", title: "Machinery Loan", text: "Get unsecured funding up to 7.5 Cr with fast approvals and tie-ups with 10+ banks.", thumb: "/assets/imgs/pages/img-6-sm.png" },
+    { num: "03", title: "Project Loan", text: "Comprehensive funding solutions for commercial, industrial, and infrastructure developments.", thumb: "/assets/imgs/pages/img-7-sm.png" },
+    { num: "04", title: "Mortgage Loan", text: "Unlock the value of your residential or commercial property with convenient loans against property.", thumb: "/assets/imgs/pages/img-8-sm.png" },
+    { num: "05", title: "Working Capital", text: "Ensure smooth business cash flow with tailored overdraft, cash credit, and short-term loans.", thumb: "/assets/imgs/pages/img-9-sm.png" },
+    { num: "06", title: "Auto Loan", text: "Drive your dream car home with fast, hassle-free financing options and attractive rates.", thumb: "/assets/imgs/pages/img-10-sm.png" },
 ];
 
 export default function Section4() {
@@ -42,7 +42,7 @@ export default function Section4() {
                                     {ARROW_SVG}
                                 </i>
                             </span>
-                            <span className="fs-font-md fw-500 text-decoration-underline">Since 2012</span>
+                            <span className="fs-font-md fw-500 text-decoration-underline">Since 2024</span>
                         </div>
                     </div>
                     <div className="col-xxl-4 col-lg-4 col-xl-4 mb-40">
@@ -61,16 +61,16 @@ export default function Section4() {
                                     ))}
                                 </div>
                                 <h5 className="fw-600 mb-0 mt-10">
-                                    <OdometerCounter count={38} suffix="+" />
+                                    <OdometerCounter count={140} suffix="+" />
                                 </h5>
-                                <span className="fz-font-lg neutral-500 fw-500">Completed projects</span>
+                                <span className="fz-font-lg neutral-500 fw-500">Happy Clients</span>
                             </div>
                         </div>
                     </div>
                     <div className="col-xxl-7 ms-auto col-lg-8 col-xl-8 mb-40">
                         <div className="at-service-list-wrap">
                             {SERVICES.map((s) => (
-                                <Link key={s.num} to="/services-details">
+                                <Link key={s.num} to="/services">
                                     <div className="at-service-item service-item">
                                         <div className="count">
                                             <span className="number">[{s.num}]</span>
@@ -78,7 +78,7 @@ export default function Section4() {
                                         <div className="content">
                                             <h1 className="title">{s.title}</h1>
                                             <p className="text">
-                                                We help you build successful products by <br /> understanding your market and users.
+                                                {s.text}
                                             </p>
                                         </div>
                                         <div className="thumb anim-zoomin">
@@ -88,7 +88,7 @@ export default function Section4() {
                                 </Link>
                             ))}
                             <div className="at-service-btn pt-30">
-                                <Link className="at-btn" to="/contact-1">
+                                <Link className="at-btn" to="/contact">
                                     <span>
                                         <span className="text-1">Get a free quote</span>
                                         <span className="text-2">Get a free quote</span>

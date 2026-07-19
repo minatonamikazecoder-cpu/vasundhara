@@ -17,29 +17,29 @@ const FAQ_ITEMS = [
     {
         id: "collapseOne",
         num: "1",
-        question: "How does your design process work?",
-        answer: "Our process includes discovery, strategy, design, feedback, and delivery — ensuring clarity, collaboration, and results at every stage.",
+        question: "What types of loans do you offer?",
+        answer: "We facilitate Home Loans, Machinery Loans, Project Loans, Mortgage Loans, Working Capital funding, and Auto Loans.",
         open: true,
     },
     {
         id: "collapseTwo",
         num: "2",
-        question: "How long does a typical project take?",
-        answer: "Timelines vary by scope, but most projects take between 2–6 weeks — with clear milestones to keep everything on track.",
+        question: "What is the maximum limit for a Machinery Loan?",
+        answer: "We facilitate unsecured machinery funding up to 7.5 Crores with attractive interest rates and quick approval times.",
         open: false,
     },
     {
         id: "collapseThree",
         num: "3",
-        question: "Do you work with startups or only established brands?",
-        answer: "We work with both startups and established brands — tailoring our approach to fit each stage of growth.",
+        question: "Which banks are you partnered with?",
+        answer: "We have formal tie-ups with 10+ premium partner banks and financial institutions to ensure you get the best interest rates and terms.",
         open: false,
     },
     {
         id: "collapseFour",
         num: "4",
-        question: "Can you handle custom or complex requests?",
-        answer: "Yes — we specialize in custom and complex projects, creating flexible solutions to meet unique needs.",
+        question: "What documents are required to apply?",
+        answer: "Requirements vary, but generally include KYC documents, bank statements, financial statements, and business registration proof. Contact us for a precise list.",
         open: false,
     },
 ];
@@ -59,21 +59,21 @@ export default function Section11({ classList = "" }: { classList?: string }) {
                                     className="w-100"
                                     alt="orisa" loading="lazy" />
                             </div>
-                            <h6 className="mb-15 pt-50">Still no luck? We can help!</h6>
-                            <p className="at-faq-dec mb-35">Let us Know how we can assist</p>
+                            <h6 className="mb-15 pt-50">Have other questions? We can help!</h6>
+                            <p className="at-faq-dec mb-35">Let us know how we can assist you</p>
                             <div
                                 className="at-btn-group at_fade_anim"
                                 data-delay=".4"
                                 data-fade-from="bottom"
                                 data-ease="bounce"
                             >
-                                <Link className="at-btn-circle" to="/faqs">
+                                <Link className="at-btn-circle" to="/contact">
                                     {BTN_CIRCLE_ARROW_SVG}
                                 </Link>
-                                <Link className="at-btn z-index-1" to="/faqs">
-                                    Support Center
+                                <Link className="at-btn z-index-1" to="/contact">
+                                    Contact Us
                                 </Link>
-                                <Link className="at-btn-circle" to="/faqs">
+                                <Link className="at-btn-circle" to="/contact">
                                     {BTN_CIRCLE_ARROW_SVG}
                                 </Link>
                             </div>

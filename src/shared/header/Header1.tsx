@@ -31,8 +31,8 @@ export default function Header1({ onOpenSearch, onToggleSidebar, onOpenHamburger
             <div className="col-xl-2 col-6">
               <div className="at-header-logo">
                 <Link to="/" className="d-inline-flex align-items-center gap-2 text-decoration-none">
-                  <img width={30} height={30} src="/assets/imgs/template/logo/favicon-dark.svg" alt="Orisa" />
-                  <h6 className="fw-700 fz-24 text-white mb-0">Orisa</h6>
+                  <img width={40} height={40} src="/assets/imgs/template/logo/favicon.png" alt="Vasundhara Financial Services" />
+                  <h6 className="fw-700 fz-24 text-white mb-0">Vasundhara</h6>
                 </Link>
               </div>
             </div>

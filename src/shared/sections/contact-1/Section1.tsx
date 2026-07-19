@@ -141,53 +141,29 @@ export default function Section1() {
                             </span>
                             <h2 className="at-section-title reveal-text mb-lg-0 mb-4">
                                 <RevealText>
-                                    Reach out to discuss
-                                    your project requirements
+                                    Reach out to discuss your loan requirements
                                 </RevealText>
                             </h2>
                             <div className="at-about-content d-flex flex-md-row flex-column justify-content-between gap-4 pt-40">
-                                <div className="d-flex gap-4 w-lg-50">
+                                <div className="d-flex gap-4 w-lg-100">
                                     <div className="icon">
                                         {OFFICE_ICON_1}
                                     </div>
                                     <div>
-                                        <h6 className="fw-600">Ofice</h6>
+                                        <h6 className="fw-600">Head Office</h6>
                                         <span className="fz-font-md neutral-500">
-                                            205 North Michigan Avenue, Suite 810
+                                            Plot No. 16, Vasundhara,
                                             <br className="d-block" />
-                                            Chicago, 60601, USA
+                                            Hubli, Karnataka, India
                                             <br className="d-block" />
                                             Phone:{" "}
                                             <span className="neutral-900">
-                                                <a href="tel:+1234567890">+1234567890</a>
+                                                <a href="tel:+919110803505">+91 9110803505</a>
                                             </span>
                                             <br className="d-block" />
                                             Email:{" "}
                                             <span className="neutral-900">
-                                                <a href="mailto:hello@orisa.com">hello@orisa.com</a>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="d-flex gap-4 w-lg-50">
-                                    <div className="icon">
-                                        {OFFICE_ICON_2}
-                                    </div>
-                                    <div>
-                                        <h6 className="fw-600">Studio</h6>
-                                        <span className="fz-font-md neutral-500">
-                                            245 Fifth Avenue, Suite 1800
-                                            <br className="d-block" />
-                                            New York, NY 10016, USA
-                                            <br className="d-block" />
-                                            Phone:{" "}
-                                            <span className="neutral-900">
-                                                <a href="tel:+2125557398">+2125557398</a>
-                                            </span>
-                                            <br className="d-block" />
-                                            Email:{" "}
-                                            <span className="neutral-900">
-                                                <a href="mailto:sale@orisa.com">sale@orisa.com</a>
+                                                <a href="mailto:vasundharafs@gmail.com">vasundharafs@gmail.com</a>
                                             </span>
                                         </span>
                                     </div>
@@ -217,8 +193,8 @@ export default function Section1() {
                             ))}
                         </div>
                         <h6 className="mb-4 fz-font-lg">
-                            Start the conversation by sharing your vision. <br />
-                            Our team will respond within 1–2 business days.
+                            Start the conversation by sharing your loan needs. <br />
+                            Our advisors will respond within 1 business day.
                         </h6>
                     </div>
                 </div>

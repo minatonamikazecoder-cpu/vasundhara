@@ -1,32 +1,32 @@
 import OdometerCounter from "@/shared/elements/OdometerCounter";
 const STATS = [
     {
-        prefix: "$",
-        count: 28,
-        suffix: "M+",
-        label: (
-            <>
-                Revenue driven through <br /> digital strategy
-            </>
-        ),
-    },
-    {
         prefix: "",
-        count: 64,
-        suffix: "K+",
-        label: (
-            <>
-                Qualified leads <br /> generated
-            </>
-        ),
-    },
-    {
-        prefix: "",
-        count: 190,
+        count: 140,
         suffix: "+",
         label: (
             <>
-                Brands scaled <br /> with Orisa
+                Happy Clients <br /> Served
+            </>
+        ),
+    },
+    {
+        prefix: "₹",
+        count: 50,
+        suffix: " Cr+",
+        label: (
+            <>
+                Capital Loan <br /> Disbursed
+            </>
+        ),
+    },
+    {
+        prefix: "",
+        count: 10,
+        suffix: "+",
+        label: (
+            <>
+                Premium Bank <br /> Tie-ups
             </>
         ),
     },

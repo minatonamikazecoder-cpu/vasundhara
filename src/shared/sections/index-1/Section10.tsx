@@ -10,17 +10,16 @@ const TICKER_SVG = (
 );
 
 const TICKER_ITEMS = [
-    "web3",
-    "B2B & B2C",
-    "SaaS Platforms",
-    "Art Direction",
-    "Web & Mobile Apps",
-    "Motion Design",
-    "UX/UI",
-    "Branding",
-    "Concept Design",
-    "Presentations",
-    "Social Media & Ads",
+    "Machinery Loan",
+    "Working Capital",
+    "Home Loan",
+    "Project Loan",
+    "Mortgage Loan",
+    "Auto Loan",
+    "Financial Consultation",
+    "Debt Structuring",
+    "Business Overdraft",
+    "Secured Funding",
 ];
 
 export default function Section10() {

@@ -31,10 +31,10 @@ export default function Section2() {
                             </span>
                             <h3 className="at-section-title mb-0">
                                 <span className="">
-                                    We shape animated stories that inspire and engage, uniting thoughtful design, fluid motion, and digital craftsmanship.
+                                    We facilitate tailored loan options and strategic financial planning, uniting experience, trusted relationships, and client success.
                                 </span>
                                 <span className="at-about-btn-transform ml-20">
-                                    <Link className="at-btn" to="/contact-1">
+                                    <Link className="at-btn" to="/contact">
                                         <span>
                                             <span className="text-1">GET IN TOUCH</span>
                                             <span className="text-2">GET IN TOUCH</span>
@@ -55,15 +55,14 @@ export default function Section2() {
                                         <path fillRule="evenodd" clipRule="evenodd" d="M40 20V0H20H0V20V40H20L40 20ZM40 20H20V40L0 20L20 0L40 20Z" fill="#1B8189" />
                                     </svg>
                                     <br className="d-block" />
-                                    We build <span className="fw-700">bold</span>, resilient brands designed to leave a lasting <br />
-                                    mark on the world.
+                                    We build <span className="fw-700">secure</span>, resilient financial pathways designed to empower businesses and individuals.
                                 </span>
                             </div>
                             <div className="d-flex align-items-center">
                                 <div className="block-author d-flex align-items-center position-relative">
                                     {AVATARS.map((avatar, i) => (
                                         <div key={i} className={`avatar overflow-hidden ${avatar.zClass}`}>
-                                            <Link to="/team-details">
+                                            <Link to="/about">
                                                 <img
                                                     src={avatar.src}
                                                     alt={avatar.alt}
@@ -74,7 +73,7 @@ export default function Section2() {
                                     ))}
                                 </div>
                                 <div className="fz-font-md fw-600 text-nowrap">
-                                    <OdometerCounter count={15} suffix="+" />
+                                    <OdometerCounter count={10} suffix="+" />
                                 </div>
                             </div>
                         </div>
@@ -106,16 +105,16 @@ export default function Section2() {
                                                         data-parallax
                                                         data-parallax-speed="0.45"
                                                         data-parallax-range="100"
-                                                        src="/assets/imgs/pages/img-3.webp"
-                                                        alt="orisa"
+                                                        src="/assets/imgs/pages/img-3.png"
+                                                        alt="Financial Consultation"
                                                         width={600}
                                                         height={450} loading="lazy" />
                                                 </div>
                                             </div>
                                             <div className="at-about-content">
-                                                <h3 className="at-about-title mb-10 at-char-animation">Creative Expertise</h3>
+                                                <h3 className="at-about-title mb-10 at-char-animation">Tailored Loan Solutions</h3>
                                                 <p className="at-about-dec at_fade_anim">
-                                                    With over a decade of design expertise, we create tailored solutions that engage audiences, build meaningful connections, and elevate brands with creativity and intent.
+                                                    With our deep expertise in financial consultation, we secure custom financing options that support your working capital, machinery, project, or personal home goals.
                                                 </p>
                                             </div>
                                         </div>
@@ -123,9 +122,9 @@ export default function Section2() {
                                     <div className="col-lg-6 col-md-6">
                                         <div className="at-about-item mb-40 d-flex flex-column gap-4">
                                             <div className="at-about-content order-2 order-md-1">
-                                                <h3 className="at-about-title mb-10 at-char-animation">Experience & Innovation</h3>
+                                                <h3 className="at-about-title mb-10 at-char-animation">Partnership & Trust</h3>
                                                 <p className="at-about-dec at_fade_anim">
-                                                    Backed by a decade of creative experience, we craft visual experiences that bring together strategy, design, and technology to grow brands, inspire audiences, and create meaningful impact.
+                                                    Backed by tie-ups with 10+ premium banks, we offer unsecured machinery funding, capital loans, and mortgage options with fast, hassle-free approvals.
                                                 </p>
                                             </div>
                                             <div className="anim-zoomin-wrap order-1 order-md-2">
@@ -135,8 +134,8 @@ export default function Section2() {
                                                         data-delay=".4"
                                                         data-fade-from="bottom"
                                                         data-ease="bounce"
-                                                        src="/assets/imgs/pages/img-4.webp"
-                                                        alt="orisa"
+                                                        src="/assets/imgs/pages/img-4.png"
+                                                        alt="Partnership Trust"
                                                         width={500}
                                                         height={450} loading="lazy" />
                                                 </div>

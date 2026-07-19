@@ -29,28 +29,28 @@ const PLUS_ICON = (
 
 const JOURNEY_ITEMS = [
     {
-        date: "2021 — Expanding Capabilities",
-        title: "From Design Studio to Digital Agency",
+        date: "2024 — Inception & Foundation",
+        title: "Establishing Vasundhara Financial Services",
         company: null,
-        desc: "As demand grew, so did our expertise. We expanded into UI/UX, web development, and digital strategy — building cross-functional teams to deliver end-to-end solutions.",
+        desc: "Founded in Hubli to address the credit gap for MSMEs, providing local businesses with direct access to tailored capital and machinery loans.",
     },
     {
-        date: "2022 — Trusted by Growing Brands",
-        title: "ML Infrastructure Engineer",
-        company: "Building Long-Term Partnerships",
-        desc: "We began working with scaling businesses and established brands, focusing on long-term collaboration instead of one-off projects. Our process matured, and our impact became measurable.",
+        date: "2025 — Network Expansion",
+        title: "10+ Premium Bank Partnerships",
+        company: null,
+        desc: "Successfully established direct tie-ups with premium national banks and NBFCs, allowing us to source the most competitive interest rates and terms.",
     },
     {
-        date: "2024 — Designing for the Future",
-        title: "Innovation, Scale, and What's Next",
+        date: "2026 — Scaling Milestones",
+        title: "Over ₹50 Crores Disbursed",
         company: null,
-        desc: "Today, we continue to evolve — embracing new technologies, smarter workflows, and future-ready design systems. Our journey is ongoing, and we're just getting started.",
+        desc: "Proudly crossed the milestone of 50+ Crores in total disbursements, supporting more than 140 local business owners and families.",
     },
     {
-        date: "2025+ — Beyond Boundaries",
-        title: "The Next Chapter",
+        date: "2026+ — Future Horizons",
+        title: "Digital Transformation & Beyond",
         company: null,
-        desc: "With a global mindset and a passion for innovation, we're shaping what's next in digital experiences — together with ambitious partners around the world.",
+        desc: "Integrating seamless digital tools to make loan applications faster and more accessible across North Karnataka and surrounding regions.",
     },
 ];
 
@@ -85,13 +85,13 @@ export default function Section2() {
                             data-fade-from="bottom"
                             data-ease="bounce"
                         >
-                            <Link className="at-btn-circle bg-neutral-700" to="/pricing">
+                            <Link className="at-btn-circle bg-neutral-700" to="/contact">
                                 {ARROW_CIRCLE_SVG}
                             </Link>
-                            <Link className="at-btn z-index-1 bg-neutral-700" to="/pricing">
-                                Start a Project
+                            <Link className="at-btn z-index-1 bg-neutral-700" to="/contact">
+                                Contact Us
                             </Link>
-                            <Link className="at-btn-circle bg-neutral-700" to="/pricing">
+                            <Link className="at-btn-circle bg-neutral-700" to="/contact">
                                 {ARROW_CIRCLE_SVG}
                             </Link>
                         </div>
@@ -106,20 +106,20 @@ export default function Section2() {
                                     className="w-100 scale-img-from-to"
                                     data-value-1="1.5"
                                     data-value-2="1"
-                                    src="/assets/imgs/pages/img-121.webp"
-                                    alt="orisa"
+                                    src="/assets/imgs/pages/img-3.png"
+                                    alt="Vasundhara Office"
                                     width={550}
                                     height={660} loading="lazy" />
                                 <div className="alt-portfolio-btn">
                                     <div className="content">
                                         <span className="bg-transparent text-uppercase border px-3 py-1 rounded-pill text-white fz-font-label">
-                                            Since 2012
+                                            Since 2024
                                         </span>
                                         <h2 className="fw-400 fz-font-3xl text-white mb-0 mt-20">
-                                            Artificial intelligence and Big Data expert
+                                            Financial Consultation & Loan Advisory
                                         </h2>
                                         <p className="text-white fz-font-md mb-0 mt-10 text-truncate-2 des">
-                                            We always provide people a complete solution upon focused of any business
+                                            We provide businesses and individuals complete funding solutions with 10+ premium bank tie-ups.
                                         </p>
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@ export default function Section2() {
                             <div className="alt-portfolio-content d-flex justify-content-between align-items-center bg-neutral-700">
                                 <h5 className="alt-portfolio-title mb-0">
                                     <Link to="#" className="common-underline text-white">
-                                        Orisa Nova<sup>®</sup>
+                                        Vasundhara Financial<sup>®</sup>
                                     </Link>
                                 </h5>
                                 <span className="alt-portfolio-plus text-white">{PLUS_ICON}</span>

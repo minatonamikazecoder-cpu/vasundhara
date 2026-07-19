@@ -113,23 +113,13 @@ const SOCIAL_ITEMS = [
 const OFFICES = [
     {
         icon: OFFICE_ICON_1,
-        title: "Office",
-        address: "205 North Michigan Avenue, Suite 810",
-        city: "Chicago, 60601, USA",
-        phone: "+1234567890",
-        phoneHref: "tel:+1234567890",
-        email: "hello@orisa.com",
-        emailHref: "mailto:hello@orisa.com",
-    },
-    {
-        icon: OFFICE_ICON_2,
-        title: "Office",
-        address: "245 Fifth Avenue, Suite 1800",
-        city: "New York, NY 10016, USA",
-        phone: "+2125557398",
-        phoneHref: "tel:+2125557398",
-        email: "sale@orisa.com",
-        emailHref: "mailto:sale@orisa.com",
+        title: "Hubli Head Office",
+        address: "Plot No. 16, Vasundhara,",
+        city: "Hubli, Karnataka, India",
+        phone: "+91 9110803505",
+        phoneHref: "tel:+919110803505",
+        email: "vasundharafs@gmail.com",
+        emailHref: "mailto:vasundharafs@gmail.com",
     },
 ];
 

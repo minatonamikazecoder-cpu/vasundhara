@@ -13,10 +13,10 @@ function ArrowIcon() {
 }
 
 const heroServices = [
-    "Web Development",
-    "Motion Graphics",
-    "Brand Strategy",
-    "Product Design",
+    "Machinery Loan",
+    "Working Capital",
+    "Home Loan",
+    "Project Loan",
 ];
 
 export default function Section1() {
@@ -25,7 +25,7 @@ export default function Section1() {
             {/* at-hero-area */}
             <div
                 className="at-hero-area scene p-relative z-index-1 bg-position fix at-hero-spacing bg-primary-1 overflow-hidden"
-                data-background="/assets/imgs/pages/bg-img.webp"
+                data-background="/assets/imgs/pages/bg-img.png"
                 data-parallax-scene
                 data-scalar-x="18"
                 data-scalar-y="18"
@@ -47,14 +47,14 @@ export default function Section1() {
                         height={1043}
                         className="layer"
                         data-depth=".1"
-                        src="/assets/imgs/pages/img-1.webp"
-                        alt="orisa"
+                        src="/assets/imgs/pages/img-1.png"
+                        alt="Vasundhara Consultant"
                         style={{ width: "auto", height: "auto", alignSelf: "flex-end" }} loading="lazy" />
                 </div>
                 <div className="container p-relative">
                     <div className="p-absolute bottom-100 start-0 ms-5 mb-100 d-none d-lg-block">
                         <a
-                            href="mailto:hello@orisa.com"
+                            href="mailto:vasundharafs@gmail.com"
                             className="at-hero-button at-btn bg-transparent p-relative"
                         >
                             <img
@@ -89,7 +89,7 @@ export default function Section1() {
                                 </div>
                                 <Link
                                     className="at-btn text-white rounded-0 bg-transparent px-0 pt-2 pb-3 border-0"
-                                    to="/about-2"
+                                    to="/about"
                                 >
                                     <span>
                                         <span className="text-1">How we work</span>
@@ -126,8 +126,7 @@ export default function Section1() {
                                     </li>
                                     <li className="at_fade_anim">
                                         <span className="fz-font-md fw-500 text-white ">
-                                            We partner with brands to create digital design that drives
-                                            conversions and commands attention.
+                                            We partner with businesses and individuals to secure custom financial loan options that drive long-term growth.
                                         </span>
                                     </li>
                                 </ul>
@@ -136,7 +135,7 @@ export default function Section1() {
                         <div className="col-xxl-5 offset-xxl-2 col-xl-6 col-12 ms-auto order-xl-1 order-md-2">
                             <div className="at-hero-content mb-30">
                                 <span className="at-hero-subtitle text-white mb-10 d-inline-block at_fade_anim">
-                                    B2B Marketing Agency
+                                    Financial Services & Loan Consultation
                                 </span>
                                 <h2 className="at-hero-title text-white">
                                     <span
@@ -144,7 +143,7 @@ export default function Section1() {
                                         data-delay="0.5"
                                         data-fade-from="top"
                                     >
-                                        Designing with <br /> imagination, <br /> driven by purpose.
+                                        Powering your <br /> financial future, <br /> secured by trust.
                                     </span>
                                 </h2>
                                 <div
@@ -154,11 +153,11 @@ export default function Section1() {
                                 >
                                     <Link
                                         className="at-btn bg-white rounded-0 text-dark"
-                                        to="/portfolio-1"
+                                        to="/services"
                                     >
                                         <span>
-                                            <span className="text-1">Explore All Work</span>
-                                            <span className="text-2">Explore All Work</span>
+                                            <span className="text-1">Explore Loan Services</span>
+                                            <span className="text-2">Explore Loan Services</span>
                                         </span>
                                         <i>
                                             <ArrowIcon />
@@ -166,7 +165,7 @@ export default function Section1() {
                                     </Link>
                                     <Link
                                         className="at-btn at-btn-border-white text-white rounded-0"
-                                        to="/contact-1"
+                                        to="/contact"
                                     >
                                         <span>
                                             <span className="text-1">Get a free quote</span>
@@ -180,8 +179,8 @@ export default function Section1() {
                             </div>
                         </div>
                         <div className="col-1 ms-auto text-end align-self-start rotate-90 order-xl-2 order-md-1 d-none d-md-block">
-                            <a href="mailto:hello@orisa.com" className="text-white fw-600">
-                                <span className="at_fade_anim">hello@orisa.com</span>
+                            <a href="mailto:vasundharafs@gmail.com" className="text-white fw-600">
+                                <span className="at_fade_anim">vasundharafs@gmail.com</span>
                             </a>
                         </div>
                     </div>
