@@ -119,11 +119,34 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
             <div className="at-offcanvas-logo">
               <Link to="/" className="text-decoration-none d-inline-flex align-items-center gap-2">
                 <img 
-                  src="/assets/imgs/template/logo/logo-w-lg.png" 
+                  src="/assets/imgs/template/logo/favicon.png" 
                   alt="Vasundhara Logo" 
-                  style={{ height: "55px", width: "auto", objectFit: "contain" }} 
+                  className="invert-0"
+                  style={{ height: "45px", width: "auto", objectFit: "contain" }} 
                   loading="lazy" 
                 />
+                <div className="d-flex flex-column lh-1">
+                  <span 
+                    className="fw-bold text-uppercase text-white" 
+                    style={{ 
+                      fontSize: "20px", 
+                      letterSpacing: "1px",
+                      fontFamily: "var(--at-font-heading)" 
+                    }}
+                  >
+                    Vasundhara
+                  </span>
+                  <span 
+                    className="text-white-50" 
+                    style={{ 
+                      fontSize: "10px", 
+                      letterSpacing: "0.5px", 
+                      textTransform: "uppercase" 
+                    }}
+                  >
+                    Financial Services
+                  </span>
+                </div>
               </Link>
             </div>
             <div className="at-offcanvas-close-btn">
@@ -197,11 +220,34 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
             <div className="at-header-logo d-flex justify-content-between align-items-center mb-50">
               <Link to="/" className="text-decoration-none d-inline-flex align-items-center gap-2">
                 <img
-                  src="/assets/imgs/template/logo/logo-w-lg.png"
+                  src="/assets/imgs/template/logo/favicon.png"
                   alt="Vasundhara Logo"
-                  style={{ height: "55px", width: "auto", objectFit: "contain" }}
+                  className="invert-0"
+                  style={{ height: "45px", width: "auto", objectFit: "contain" }}
                   loading="lazy"
                 />
+                <div className="d-flex flex-column lh-1">
+                  <span 
+                    className="fw-bold text-uppercase text-white" 
+                    style={{ 
+                      fontSize: "20px", 
+                      letterSpacing: "1px",
+                      fontFamily: "var(--at-font-heading)" 
+                    }}
+                  >
+                    Vasundhara
+                  </span>
+                  <span 
+                    className="text-white-50" 
+                    style={{ 
+                      fontSize: "10px", 
+                      letterSpacing: "0.5px", 
+                      textTransform: "uppercase" 
+                    }}
+                  >
+                    Financial Services
+                  </span>
+                </div>
               </Link>
               <span className="hamburger-close-btn close-sidebar" role="button" tabIndex={0} aria-label="Close" onClick={onClose}>
                 <CloseIconSvg />

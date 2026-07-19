@@ -87,13 +87,23 @@ export default function Section7() {
                                             width={600}
                                             height={400} loading="lazy" />
                                     </div>
-                                    <img
-                                        className="p-absolute bottom-0 start-0 m-4"
-                                        src="/assets/imgs/template/logo/logo-w-lg.png"
-                                        alt="Vasundhara Logo"
-                                        width={150}
-                                        height={45}
-                                        style={{ width: "auto", height: "auto" }} loading="lazy" />
+                                    <div className="p-absolute bottom-0 start-0 m-4 d-inline-flex align-items-center gap-2 bg-dark bg-opacity-75 px-3 py-2 rounded-3 border border-secondary" style={{ backdropFilter: "blur(10px)" }}>
+                                        <img
+                                            src="/assets/imgs/template/logo/favicon.png"
+                                            alt="Vasundhara Logo"
+                                            className="invert-0"
+                                            style={{ width: "24px", height: "auto", objectFit: "contain" }} 
+                                            loading="lazy" 
+                                        />
+                                        <div className="d-flex flex-column lh-1">
+                                            <span className="fw-bold text-uppercase text-white" style={{ fontSize: "12px", letterSpacing: "0.5px" }}>
+                                                Vasundhara
+                                            </span>
+                                            <span className="text-white-50" style={{ fontSize: "6px", letterSpacing: "0.2px", textTransform: "uppercase" }}>
+                                                Financial Services
+                                            </span>
+                                        </div>
+                                    </div>
                                     <div className="content position-absolute top-0 end-0 m-4">
                                         <Link
                                             className="bg-transparent text-uppercase border px-3 py-1 rounded-pill text-white fz-font-label"

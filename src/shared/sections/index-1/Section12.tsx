@@ -80,16 +80,38 @@ export default function Section12() {
                                 <div className="at-header-logo">
                                     <Link to="/" className="d-inline-flex align-items-center gap-2 text-decoration-none">
                                         <img
-                                            src="/assets/imgs/template/logo/logo-w-lg.png"
-                                            alt="Vasundhara Financial Services"
+                                            src="/assets/imgs/template/logo/favicon.png"
+                                            alt="Vasundhara Logo"
+                                            className="invert-0"
                                             style={{ 
-                                                height: "48px", 
+                                                height: "40px", 
                                                 width: "auto", 
-                                                objectFit: "contain",
-                                                filter: "brightness(0) invert(1)"
+                                                objectFit: "contain"
                                             }}
                                             loading="lazy"
                                         />
+                                        <div className="d-flex flex-column lh-1">
+                                            <span 
+                                                className="fw-bold text-uppercase text-white" 
+                                                style={{ 
+                                                    fontSize: "18px", 
+                                                    letterSpacing: "1px",
+                                                    fontFamily: "var(--at-font-heading)" 
+                                                }}
+                                            >
+                                                Vasundhara
+                                            </span>
+                                            <span 
+                                                className="text-white-50" 
+                                                style={{ 
+                                                    fontSize: "9px", 
+                                                    letterSpacing: "0.5px", 
+                                                    textTransform: "uppercase" 
+                                                }}
+                                            >
+                                                Financial Services
+                                            </span>
+                                        </div>
                                     </Link>
                                 </div>
                                 <span

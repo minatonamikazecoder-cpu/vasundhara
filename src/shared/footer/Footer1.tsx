@@ -63,17 +63,41 @@ export default function Footer1() {
           <div className="row g-5">
             <div className="col-xxl-4 col-lg-6">
               <div className="d-flex flex-column align-items-start gap-4">
-                <img
-                  src="/assets/imgs/template/logo/logo-w-lg.png"
-                  alt="Vasundhara Logo"
-                  style={{ 
-                    height: "55px", 
-                    width: "auto", 
-                    objectFit: "contain",
-                    filter: "invert(1)"
-                  }}
-                  loading="lazy"
-                />
+                <div className="d-inline-flex align-items-center gap-2">
+                  <img
+                    src="/assets/imgs/template/logo/favicon.png"
+                    alt="Vasundhara Logo"
+                    className="invert-0"
+                    style={{ 
+                      height: "45px", 
+                      width: "auto", 
+                      objectFit: "contain"
+                    }}
+                    loading="lazy"
+                  />
+                  <div className="d-flex flex-column lh-1">
+                    <span 
+                      className="fw-bold text-uppercase text-white" 
+                      style={{ 
+                        fontSize: "20px", 
+                        letterSpacing: "1px",
+                        fontFamily: "var(--at-font-heading)" 
+                      }}
+                    >
+                      Vasundhara
+                    </span>
+                    <span 
+                      className="text-white-50" 
+                      style={{ 
+                        fontSize: "10px", 
+                        letterSpacing: "0.5px", 
+                        textTransform: "uppercase" 
+                      }}
+                    >
+                      Financial Services
+                    </span>
+                  </div>
+                </div>
                 <div>
                   <h4 className="text-white reveal-text">
                     <RevealText>
