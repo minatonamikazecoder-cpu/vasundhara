@@ -150,12 +150,12 @@ export default function Section7() {
                                             <h6 className="text-end mb-0">
                                                 Disbursed
                                                 <br />
-                                                Capital
+                                                Loans
                                             </h6>
                                             <div className="pt-150">
                                                 {STAT_SVG_1}
                                                 <p className="fz-font-lg mt-3 mb-0">
-                                                    We provide businesses and individuals complete funding solutions tailored to their exact requirements.
+                                                    Successfully disbursed over 50 Crores in funding, enabling local businesses, industrial ventures, and families to achieve their financial aspirations.
                                                 </p>
                                             </div>
                                         </div>
@@ -165,14 +165,14 @@ export default function Section7() {
                                     <div className="hover-unborder">
                                         <div className="bg-neutral-0 rounded-4 p-5 mb-2">
                                             <h6 className="text-end mb-0">
-                                                Bank
+                                                Banking
                                                 <br />
                                                 Partners
                                             </h6>
                                             <div className="pt-150">
                                                 {STAT_SVG_2}
                                                 <p className="fz-font-lg mt-3 mb-0">
-                                                    Because sometimes the best loan structure is the one that gives you maximum flexibility and minimal interest.
+                                                    Connected with over 10 premier national banks and NBFCs, ensuring our clients receive a wide selection of competitive loan options and structures.
                                                 </p>
                                             </div>
                                         </div>

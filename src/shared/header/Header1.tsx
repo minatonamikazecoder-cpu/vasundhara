@@ -15,7 +15,7 @@ export default function Header1({ onOpenSearch, onToggleSidebar, onOpenHamburger
   const { isDark } = useTheme();
   const location = useLocation();
 
-  const isWhite = isDark;
+  const isWhite = isDark || location.pathname === "/";
 
   useEffect(() => {
     const SCROLL_THRESHOLD = 20;
