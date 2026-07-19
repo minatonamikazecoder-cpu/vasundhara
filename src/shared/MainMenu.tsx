@@ -32,11 +32,6 @@ export default function MainMenu() {
         </MenuLink>
       </li>
       <li>
-        <MenuLink to="/#services">
-          <LinkSwap label="Services" />
-        </MenuLink>
-      </li>
-      <li>
         <MenuLink to="/contact">
           <LinkSwap label="Contact Us" />
         </MenuLink>

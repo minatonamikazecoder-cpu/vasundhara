@@ -37,7 +37,6 @@ const SOCIAL_LINKS = [
 const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Services", href: "/#services" },
   { label: "Contact Us", href: "/contact" }
 ] as const;
 
@@ -71,7 +70,7 @@ export default function Footer1() {
                     height: "55px", 
                     width: "auto", 
                     objectFit: "contain",
-                    filter: "brightness(0) invert(1)"
+                    filter: "invert(1)"
                   }}
                   loading="lazy"
                 />
