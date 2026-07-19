@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import RevealText from "@/shared/effects/RevealText";
 
 const ARROW_SVG = (
@@ -19,32 +20,30 @@ const FAQ_ITEMS = [
         num: "1",
         question: "What types of loans do you offer?",
         answer: "We facilitate Home Loans, Machinery Loans, Project Loans, Mortgage Loans, Working Capital funding, and Auto Loans.",
-        open: true,
     },
     {
         id: "collapseTwo",
         num: "2",
         question: "What is the maximum limit for a Machinery Loan?",
         answer: "We facilitate unsecured machinery funding up to 7.5 Crores with attractive interest rates and quick approval times.",
-        open: false,
     },
     {
         id: "collapseThree",
         num: "3",
         question: "Which banks are you partnered with?",
         answer: "We have formal tie-ups with 10+ premium partner banks and financial institutions to ensure you get the best interest rates and terms.",
-        open: false,
     },
     {
         id: "collapseFour",
         num: "4",
         question: "What documents are required to apply?",
         answer: "Requirements vary, but generally include KYC documents, bank statements, financial statements, and business registration proof. Contact us for a precise list.",
-        open: false,
     },
 ];
 
 export default function Section11({ classList = "" }: { classList?: string }) {
+    const [openItemId, setOpenItemId] = useState<string | null>("collapseOne");
+
     return (
         <div className={`alt-faq-area pt-145 pb-80 ${classList || ""}`}>
             <div className="container">
@@ -58,78 +57,80 @@ export default function Section11({ classList = "" }: { classList?: string }) {
                                     height={700}
                                     className="w-100"
                                     alt="orisa" loading="lazy" />
-                            </div>
-                            <h6 className="mb-15 pt-50">Have other questions? We can help!</h6>
-                            <p className="at-faq-dec mb-35">Let us know how we can assist you</p>
-                            <div
-                                className="at-btn-group at_fade_anim"
-                                data-delay=".4"
-                                data-fade-from="bottom"
-                                data-ease="bounce"
-                            >
-                                <Link className="at-btn-circle" to="/contact">
-                                    {BTN_CIRCLE_ARROW_SVG}
-                                </Link>
-                                <Link className="at-btn z-index-1" to="/contact">
-                                    Contact Us
-                                </Link>
-                                <Link className="at-btn-circle" to="/contact">
-                                    {BTN_CIRCLE_ARROW_SVG}
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-7">
-                        <div className="at-faq ml-115">
-                            <span className="at-btn common-black bg-transparent mb-10 rounded-0 p-0">
-                                <span className="text-uppercase">
-                                    <span className="text-1">FAQ</span>
-                                    <span className="text-2">FAQ</span>
-                                </span>
-                                <i>
-                                    {ARROW_SVG}
-                                    {ARROW_SVG}
-                                </i>
-                            </span>
-                            <h3 className="at-section-title reveal-text">
-                                <RevealText>
-                                    Answered questions. Everything you might want to know—up front.
-                                </RevealText>
-                            </h3>
-                            <div className="accordion pt-80" id="accordionExample">
-                                {FAQ_ITEMS.map((item) => (
-                                    <div key={item.id} className="at-faq-item scroll-move-up rounded-4">
-                                        <div className="at-faq-header d-flex gap-2">
-                                            <div className="box-number">
-                                                <span className="at-faq-number">{item.num}</span>
-                                            </div>
-                                            <button
-                                                className={`at-faq-button${item.open ? "" : " collapsed"}`}
-                                                type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target={`#${item.id}`}
-                                                aria-expanded={item.open}
-                                                aria-controls={item.id}
-                                            >
-                                                {item.question}
-                                            </button>
-                                        </div>
-                                        <div
-                                            id={item.id}
-                                            className={`at-faq-collapse collapse${item.open ? " show" : ""}`}
-                                            data-bs-parent="#accordionExample"
-                                        >
-                                            <div className="at-faq-body">
-                                                <p>{item.answer}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-}
+                             </div>
+                             <h6 className="mb-15 pt-50">Have other questions? We can help!</h6>
+                             <p className="at-faq-dec mb-35">Let us know how we can assist you</p>
+                             <div
+                                 className="at-btn-group at_fade_anim"
+                                 data-delay=".4"
+                                 data-fade-from="bottom"
+                                 data-ease="bounce"
+                             >
+                                 <Link className="at-btn-circle" to="/contact">
+                                     {BTN_CIRCLE_ARROW_SVG}
+                                 </Link>
+                                 <Link className="at-btn z-index-1" to="/contact">
+                                     Contact Us
+                                 </Link>
+                                 <Link className="at-btn-circle" to="/contact">
+                                     {BTN_CIRCLE_ARROW_SVG}
+                                 </Link>
+                             </div>
+                         </div>
+                     </div>
+                     <div className="col-lg-7">
+                         <div className="at-faq ml-115">
+                             <span className="at-btn common-black bg-transparent mb-10 rounded-0 p-0">
+                                 <span className="text-uppercase">
+                                     <span className="text-1">FAQ</span>
+                                     <span className="text-2">FAQ</span>
+                                 </span>
+                                 <i>
+                                     {ARROW_SVG}
+                                     {ARROW_SVG}
+                                 </i>
+                             </span>
+                             <h3 className="at-section-title reveal-text">
+                                 <RevealText>
+                                     Answered questions. Everything you might want to know—up front.
+                                 </RevealText>
+                             </h3>
+                             <div className="accordion pt-80" id="accordionExample">
+                                 {FAQ_ITEMS.map((item) => {
+                                     const isOpen = openItemId === item.id;
+                                     return (
+                                         <div key={item.id} className="at-faq-item scroll-move-up rounded-4">
+                                             <div className="at-faq-header d-flex gap-2">
+                                                 <div className="box-number">
+                                                     <span className="at-faq-number">{item.num}</span>
+                                                 </div>
+                                                 <button
+                                                     className={`at-faq-button${isOpen ? "" : " collapsed"}`}
+                                                     type="button"
+                                                     onClick={() => setOpenItemId(isOpen ? null : item.id)}
+                                                     aria-expanded={isOpen}
+                                                     aria-controls={item.id}
+                                                 >
+                                                     {item.question}
+                                                 </button>
+                                             </div>
+                                             <div
+                                                 id={item.id}
+                                                 className={`at-faq-collapse collapse${isOpen ? " show" : ""}`}
+                                                 style={{ display: isOpen ? "block" : "none" }}
+                                             >
+                                                 <div className="at-faq-body">
+                                                     <p>{item.answer}</p>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     );
+                                 })}
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     );
+ }

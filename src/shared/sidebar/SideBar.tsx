@@ -118,8 +118,8 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
           <div className="at-offcanvas-top d-flex align-items-center justify-content-between">
             <div className="at-offcanvas-logo">
               <Link to="/" className="text-decoration-none d-inline-flex align-items-center gap-2">
-                <img data-width="40" src="/assets/imgs/template/logo/favicon.png" alt="Vasundhara Logo" width={40} height={40} />
-                <h6 className="fw-700 fz-24 mb-0">Vasundhara</h6>
+                <img height={55} src="/assets/imgs/template/logo/favicon.png" alt="Vasundhara Logo" style={{ height: "55px", width: "auto", objectFit: "contain" }} />
+                <h6 className="fw-700 fz-28 mb-0">Vasundhara</h6>
               </Link>
             </div>
             <div className="at-offcanvas-close-btn">
@@ -189,13 +189,12 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
               <Link to="/" className="text-decoration-none d-inline-flex align-items-center gap-2">
                 <img
                   className="dark-mode-invert"
-                  data-width="40"
                   src="/assets/imgs/template/logo/favicon.png"
                   alt="Vasundhara Logo"
-                  width={40}
-                  height={40}
+                  height={55}
+                  style={{ height: "55px", width: "auto", objectFit: "contain" }}
                 />
-                <h6 className="fw-700 fz-24 mb-0">Vasundhara</h6>
+                <h6 className="fw-700 fz-28 mb-0">Vasundhara</h6>
               </Link>
               <span className="hamburger-close-btn close-sidebar" role="button" tabIndex={0} aria-label="Close" onClick={onClose}>
                 <CloseIconSvg />

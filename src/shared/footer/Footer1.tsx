@@ -68,8 +68,8 @@ export default function Footer1() {
                   className="mt-5"
                   src="/assets/imgs/template/logo/favicon.png"
                   alt="Vasundhara Logo"
-                  width={50}
-                  height={50}
+                  height={65}
+                  style={{ height: "65px", width: "auto", objectFit: "contain" }}
                 />
                 <div>
                   <h4 className="text-white reveal-text">
