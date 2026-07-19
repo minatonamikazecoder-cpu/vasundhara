@@ -54,17 +54,16 @@ export default function MenuClone() {
       });
     };
 
-    const setupClone = (clone: HTMLElement, opts?: { flattenLinkSwap?: boolean }) => {
-      if (opts?.flattenLinkSwap) {
-        // Hamburger offcanvas (.at-offcanvas-2-area) shows both .text-1 and .text-2 stacked
-        // because the hover-swap CSS doesn't apply here. Flatten each <span class="at-link-swap">
-        // to plain text (keep `.text-1` content only). Desktop main menu untouched.
-        clone.querySelectorAll<HTMLElement>(".at-link-swap").forEach((swap) => {
-          const text = swap.querySelector<HTMLElement>(".text-1")?.textContent ?? swap.textContent ?? "";
-          const replacement = document.createTextNode(text);
-          swap.replaceWith(replacement);
-        });
-      }
+    const setupClone = (clone: HTMLElement) => {
+      // Offcanvas menus show both .text-1 and .text-2 stacked/duplicated
+      // because the hover-swap CSS only applies to the desktop menu.
+      // Flatten each <span class="at-link-swap"> to plain text (keep `.text-1` content only).
+      clone.querySelectorAll<HTMLElement>(".at-link-swap").forEach((swap) => {
+        const text = swap.querySelector<HTMLElement>(".text-1")?.textContent ?? swap.textContent ?? "";
+        const replacement = document.createTextNode(text);
+        swap.replaceWith(replacement);
+      });
+
       const submenus = clone.querySelectorAll(".at-submenu");
       submenus.forEach((sub) => {
         const parentLi = sub.parentElement;
@@ -122,8 +121,7 @@ export default function MenuClone() {
       const clone = sourceUl.cloneNode(true) as HTMLElement;
       targetNav.innerHTML = "";
       targetNav.appendChild(clone);
-      const insideOffcanvas2 = !!(targetNav as HTMLElement).closest(".at-offcanvas-2-area");
-      const cleanup = setupClone(clone, { flattenLinkSwap: insideOffcanvas2 });
+      const cleanup = setupClone(clone);
       if (cleanup) cleanups.push(cleanup);
     });
 
