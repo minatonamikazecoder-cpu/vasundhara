@@ -63,13 +63,12 @@ export default function Footer1() {
         <div className="container">
           <div className="row g-5">
             <div className="col-xxl-4 col-lg-6">
-              <div className="d-flex flex-wrap align-items-start gap-4">
+              <div className="d-flex flex-column align-items-start gap-4">
                 <img
-                  className="mt-5"
                   src="/assets/imgs/template/logo/logo-w-lg.png"
                   alt="Vasundhara Logo"
                   style={{ 
-                    height: "65px", 
+                    height: "55px", 
                     width: "auto", 
                     objectFit: "contain",
                     filter: "brightness(0) invert(1)"
@@ -83,7 +82,7 @@ export default function Footer1() {
                       Financial Future
                     </RevealText>
                   </h4>
-                  <p className="mb-0 text-white opacity-75">
+                  <p className="mb-0 text-white opacity-75 mt-3">
                     418, Nakshatra VII, Raiya Main Road,<br />
                     Bapa Sitaram Chowk,<br />
                     Rajkot, Gujarat - 360007
