@@ -4,7 +4,7 @@ import RevealText from "@/shared/effects/RevealText";
 const FeatureIcon = (
     <span className="card-home-12-price__feature-icon" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-            <circle cx="9" cy="9" r="9" fill="#F0460E" />
+            <circle cx="9" cy="9" r="9" fill="#1B8189" />
             <path d="M9 5V13M5 9H13" stroke="white" strokeWidth="1.6" strokeLinecap="round" />
         </svg>
     </span>

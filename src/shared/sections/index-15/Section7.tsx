@@ -67,10 +67,10 @@ export default function Section7() {
                         <div className="sec-7-home-15__cta-block at_fade_anim" data-fade-from="bottom" data-delay=".25">
                             <span className="sec-7-home-15__cta-mark" aria-hidden="true">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-                                    <path d="M0 0H20V20H0V0Z" fill="#F0460E" />
-                                    <path d="M20 20H40V40H20V20Z" fill="#F0460E" />
-                                    <path d="M20 0L40 0L20 20L20 0Z" fill="#F0460E" opacity="0.55" />
-                                    <path d="M0 20L20 20L0 40L0 20Z" fill="#F0460E" opacity="0.55" />
+                                    <path d="M0 0H20V20H0V0Z" fill="#1B8189" />
+                                    <path d="M20 20H40V40H20V20Z" fill="#1B8189" />
+                                    <path d="M20 0L40 0L20 20L20 0Z" fill="#1B8189" opacity="0.55" />
+                                    <path d="M0 20L20 20L0 40L0 20Z" fill="#1B8189" opacity="0.55" />
                                 </svg>
                             </span>
                             <p className="sec-7-home-15__cta-copy mb-4">

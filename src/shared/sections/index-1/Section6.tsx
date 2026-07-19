@@ -45,12 +45,12 @@ const TESTIMONIALS = [...TESTIMONIAL_SOURCES, ...TESTIMONIAL_SOURCES];
 
 const LOGO_SVG = (
     <svg className="fill-primary mb-20" xmlns="http://www.w3.org/2000/svg" width="40" height="42" viewBox="0 0 40 42" fill="none">
-        <path d="M16 14L12 7L16 0H24L28 7H20L16 14Z" fill="#F0460E" />
-        <path d="M36 21L32 14H24L28 7H36L40 14L36 21Z" fill="#F0460E" />
-        <path d="M28 35H36L40 28L36 21H28L32 28L28 35Z" fill="#F0460E" />
-        <path d="M12 35H20L24 28L28 35L24 42H16L12 35Z" fill="#F0460E" />
-        <path d="M4 21H12L8 14L12 7H4L0 14L4 21Z" fill="#F0460E" />
-        <path d="M4 21L0 28L4 35H12L16 28H8L4 21Z" fill="#F0460E" />
+        <path d="M16 14L12 7L16 0H24L28 7H20L16 14Z" fill="#1B8189" />
+        <path d="M36 21L32 14H24L28 7H36L40 14L36 21Z" fill="#1B8189" />
+        <path d="M28 35H36L40 28L36 21H28L32 28L28 35Z" fill="#1B8189" />
+        <path d="M12 35H20L24 28L28 35L24 42H16L12 35Z" fill="#1B8189" />
+        <path d="M4 21H12L8 14L12 7H4L0 14L4 21Z" fill="#1B8189" />
+        <path d="M4 21L0 28L4 35H12L16 28H8L4 21Z" fill="#1B8189" />
     </svg>
 );
 

@@ -70,10 +70,10 @@ const LOGO_SVG = (
         viewBox="0 0 48 48"
         fill="none"
     >
-        <path d="M17 18L30 5H43V18L30 31V18H17Z" fill="#F0460E" />
-        <path d="M30 31H43V44H30V31Z" fill="#F0460E" />
-        <path d="M17 18L4 31V44H17L30 31H17V18Z" fill="#F0460E" />
-        <path d="M17 18H4V5H17V18Z" fill="#F0460E" />
+        <path d="M17 18L30 5H43V18L30 31V18H17Z" fill="#1B8189" />
+        <path d="M30 31H43V44H30V31Z" fill="#1B8189" />
+        <path d="M17 18L4 31V44H17L30 31H17V18Z" fill="#1B8189" />
+        <path d="M17 18H4V5H17V18Z" fill="#1B8189" />
     </svg>
 );
 

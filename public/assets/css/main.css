@@ -1149,8 +1149,8 @@ li,
   --at-grey-3: #b6bcc6;
   --at-grey-4: #f6f6f6;
   --at-grey-5: #d7cdcd;
-  --at-theme-primary: #F0460E;
-  --at-gradient-primary: linear-gradient(90deg, #a020f0 0%, #00ffd1 100%);
+  --at-theme-primary: #1B8189;
+  --at-gradient-primary: linear-gradient(90deg, #0A1C35 0%, #1B8189 100%);
 }
 
 * {
@@ -3307,7 +3307,7 @@ input[type=color] {
   color: #585959;
 }
 .blog-card-2__author {
-  color: var(--at-theme-primary, #c94b2a);
+  color: var(--at-theme-primary, #1B8189);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -3389,7 +3389,7 @@ input[type=color] {
   color: var(--at-neutral-500);
 }
 .blog-card-3__author {
-  color: var(--at-theme-primary, #c94b2a);
+  color: var(--at-theme-primary, #1B8189);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -6182,7 +6182,7 @@ input.footer-12__cta-input::placeholder {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 .footer-12__cta-submit:hover, .footer-12__cta-submit:focus-visible {
-  background-color: #ff6128;
+  background-color: #1B8189;
 }
 
 /* ── Footer main ────────────────────────────────── */
@@ -14447,7 +14447,7 @@ input.footer-15__form-input:focus {
   margin: 0;
 }
 .sec-7-home-7__cta-btn {
-  background: var(--at-theme-primary, #f0460e);
+  background: var(--at-theme-primary, #1B8189);
   border-radius: 50px 0 0 50px;
   padding-inline: 27px;
   min-height: 50px;
@@ -14456,7 +14456,7 @@ input.footer-15__form-input:focus {
   width: 50px;
   min-width: 50px;
   height: 50px;
-  background: var(--at-theme-primary, #f0460e);
+  background: var(--at-theme-primary, #1B8189);
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -16857,7 +16857,7 @@ input.footer-15__form-input:focus {
   z-index: 2;
   padding: 8px 10px;
   border-radius: 20px;
-  background: var(--at-theme-primary, #f0460e);
+  background: var(--at-theme-primary, #1B8189);
   font-family: var(--at-ff-body);
   font-weight: 600;
   font-size: 10px;
@@ -29796,7 +29796,7 @@ input.footer-15__form-input:focus {
   height: 28px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.18);
-  color: #ffd166;
+  color: #5CC8C8;
 }
 @media (max-width: 574.98px) {
   .sec-2-home-15__media-2-badge-icon {
@@ -30929,8 +30929,8 @@ input.footer-15__form-input:focus {
 .sec-7-home-15__service-link:hover .sec-7-home-15__service-fab {
   width: 56px;
   height: 56px;
-  background: var(--at-theme-primary, #f0460e);
-  border-color: var(--at-theme-primary, #f0460e);
+  background: var(--at-theme-primary, #1B8189);
+  border-color: var(--at-theme-primary, #1B8189);
   color: var(--at-neutral-0, #fefefe);
 }
 .sec-7-home-15__service-link:hover .sec-7-home-15__service-fab svg {
@@ -31139,7 +31139,7 @@ input.footer-15__form-input:focus {
   border-color: var(--at-neutral-200, #cdcccc);
 }
 .sec-8-home-15__thumb.swiper-slide-thumb-active {
-  border-color: var(--at-theme-primary, #f0460e);
+  border-color: var(--at-theme-primary, #1B8189);
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .sec-8-home-15__thumb {
@@ -31602,12 +31602,12 @@ input.footer-15__form-input:focus {
   }
 }
 .sec-9-home-15__item-author {
-  color: #f0460e;
+  color: #1B8189;
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
 .sec-9-home-15__item-author:hover, .sec-9-home-15__item-author:focus-visible {
-  color: #f0460e;
+  color: #1B8189;
   opacity: 0.8;
 }
 
@@ -33763,7 +33763,7 @@ input.footer-15__form-input:focus {
 
 /*----------------------------------------*/
 /*  Portfolio Details 4 — Sticky Sidebar + Chapters
-/*  Brand accent: var(--at-theme-primary) (#F0460E)
+/*  Brand accent: var(--at-theme-primary) (#1B8189)
 /*----------------------------------------*/
 /* JS injects `.anim-zoomin-wrap` around every `.anim-zoomin` <img>.
    Image hosts use absolute-fill img inside aspect-ratio box. */
@@ -34449,7 +34449,7 @@ input.footer-15__form-input:focus {
 
 /*----------------------------------------*/
 /*  Portfolio Details 5 — Swiper Fade + Cinematic
-/*  Brand accent: var(--at-theme-primary) (#F0460E)
+/*  Brand accent: var(--at-theme-primary) (#1B8189)
 /*----------------------------------------*/
 /* JS injects `.anim-zoomin-wrap` around every `.anim-zoomin` <img>.
    Image hosts use absolute-fill img inside aspect-ratio box. */
@@ -36383,30 +36383,30 @@ input.footer-15__form-input:focus {
   background: #FEFEFE;
 }
 .at-btn-group-transparent-2 .at-btn {
-  background: #fff5f3;
+  background: #e8f4f3;
   border: 1px solid rgba(38, 38, 38, 0.1);
   color: #1D1D1D;
 }
 .at-btn-group-transparent-2 .at-btn-circle {
-  background-color: #fff5f3;
+  background-color: #e8f4f3;
   color: #1D1D1D;
   border: 1px solid rgba(38, 38, 38, 0.1);
 }
 .at-btn-group-transparent-2:hover > *:nth-child(2) {
-  background: #fff5f3;
+  background: #e8f4f3;
 }
 .at-btn-group-transparent-2:hover > *:nth-child(1) {
-  background: #fff5f3;
+  background: #e8f4f3;
 }
 .at-btn-group.btn-brand-1 .at-btn {
-  background: #F0460E;
-  border: 1px solid #F0460E;
+  background: #1B8189;
+  border: 1px solid #1B8189;
   color: #FEFEFE;
 }
 .at-btn-group.btn-brand-1 .at-btn-circle {
-  background-color: #F0460E;
+  background-color: #1B8189;
   color: #FEFEFE;
-  border: 1px solid #F0460E;
+  border: 1px solid #1B8189;
 }
 .at-btn.has-dot {
   position: relative;
@@ -36769,14 +36769,14 @@ body.at-magic-cursor #magic-cursor {
 }
 
 .cursor-bg-red #ball {
-  background-color: #FF535B !important;
+  background-color: #1B8189 !important;
 }
 .cursor-bg-red #ball .ball-view {
   color: var(--at-common-white);
 }
 
 .cursor-bg-red-2 #ball {
-  background-color: #FF481F !important;
+  background-color: #0A1C35 !important;
 }
 .cursor-bg-red-2 #ball .ball-view {
   color: var(--at-common-white);
@@ -37132,5 +37132,12 @@ body.at-magic-cursor #magic-cursor {
 .card-award {
   padding: 15px 20px;
   border-radius: 16px;
+}
+/* ── Vashundhara brand: re-tint orange hero assets ─── */
+.at-hero-bg img {
+  filter: hue-rotate(160deg) saturate(0.8);
+}
+.at-hero-button img {
+  filter: hue-rotate(160deg) saturate(0.8);
 }
 /*# sourceMappingURL=main.css.map */

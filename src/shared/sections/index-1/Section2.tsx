@@ -52,7 +52,7 @@ export default function Section2() {
                             <div className="at-about-subtitle-wrap mb-30">
                                 <span className="at-about-subtitle">
                                     <svg className="fill-primary mb-10" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                        <path fillRule="evenodd" clipRule="evenodd" d="M40 20V0H20H0V20V40H20L40 20ZM40 20H20V40L0 20L20 0L40 20Z" fill="#F0460E" />
+                                        <path fillRule="evenodd" clipRule="evenodd" d="M40 20V0H20H0V20V40H20L40 20ZM40 20H20V40L0 20L20 0L40 20Z" fill="#1B8189" />
                                     </svg>
                                     <br className="d-block" />
                                     We build <span className="fw-700">bold</span>, resilient brands designed to leave a lasting <br />
