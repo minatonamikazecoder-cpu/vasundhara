@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 const isDarkPath = (path: string) => /-dark\/?$/.test(path);
 
 export default function ThemeRouteSync() {
-    const pathname = useLocation().pathname;
+    const { pathname, hash } = useLocation();
 
     useEffect(() => {
         const html = document.documentElement;
@@ -24,6 +24,19 @@ export default function ThemeRouteSync() {
             html.setAttribute("data-bs-theme", prefersDark ? "dark" : "light");
         }
     }, [pathname]);
+
+    useEffect(() => {
+        if (hash) {
+            const el = document.getElementById(hash.substring(1));
+            if (el) {
+                setTimeout(() => {
+                    el.scrollIntoView({ behavior: "smooth" });
+                }, 100);
+            }
+        } else {
+            window.scrollTo(0, 0);
+        }
+    }, [pathname, hash]);
 
     return null;
 }

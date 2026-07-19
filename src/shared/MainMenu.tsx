@@ -32,7 +32,7 @@ export default function MainMenu() {
         </MenuLink>
       </li>
       <li>
-        <MenuLink to="/services">
+        <MenuLink to="/#services">
           <LinkSwap label="Services" />
         </MenuLink>
       </li>

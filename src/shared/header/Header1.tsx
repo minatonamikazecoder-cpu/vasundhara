@@ -15,8 +15,7 @@ export default function Header1({ onOpenSearch, onToggleSidebar, onOpenHamburger
   const { isDark } = useTheme();
   const location = useLocation();
 
-  const isHomePage = location.pathname === "/" || location.pathname === "/home";
-  const isWhite = isHomePage || isDark;
+  const isWhite = isDark;
 
   useEffect(() => {
     const SCROLL_THRESHOLD = 20;
@@ -43,8 +42,7 @@ export default function Header1({ onOpenSearch, onToggleSidebar, onOpenHamburger
                     style={{ 
                       height: "48px", 
                       width: "auto", 
-                      objectFit: "contain",
-                      filter: isWhite ? "brightness(0) invert(1)" : "none" 
+                      objectFit: "contain"
                     }} 
                     loading="lazy" 
                   />

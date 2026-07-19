@@ -153,7 +153,7 @@ export default function Section1() {
                                 >
                                     <Link
                                         className="at-btn bg-white rounded-0 text-dark"
-                                        to="/services"
+                                        to="/#services"
                                     >
                                         <span>
                                             <span className="text-1">Explore Loan Services</span>

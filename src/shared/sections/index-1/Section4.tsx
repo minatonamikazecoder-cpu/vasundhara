@@ -27,7 +27,7 @@ const SERVICES = [
 
 export default function Section4() {
     return (
-        <div className="at-service-area at-panel-pin-area pt-120">
+        <div id="services" className="at-service-area at-panel-pin-area pt-120">
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -70,7 +70,7 @@ export default function Section4() {
                     <div className="col-xxl-7 ms-auto col-lg-8 col-xl-8 mb-40">
                         <div className="at-service-list-wrap">
                             {SERVICES.map((s) => (
-                                <Link key={s.num} to="/services">
+                                <Link key={s.num} to="/contact">
                                     <div className="at-service-item service-item">
                                         <div className="count">
                                             <span className="number">[{s.num}]</span>
