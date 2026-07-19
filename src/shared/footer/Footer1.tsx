@@ -66,10 +66,15 @@ export default function Footer1() {
               <div className="d-flex flex-wrap align-items-start gap-4">
                 <img
                   className="mt-5"
-                  src="/assets/imgs/template/logo/favicon.png"
+                  src="/assets/imgs/template/logo/logo-w-lg.png"
                   alt="Vasundhara Logo"
-                  height={65}
-                  style={{ height: "65px", width: "auto", objectFit: "contain" }}
+                  style={{ 
+                    height: "65px", 
+                    width: "auto", 
+                    objectFit: "contain",
+                    filter: "brightness(0) invert(1)"
+                  }}
+                  loading="lazy"
                 />
                 <div>
                   <h4 className="text-white reveal-text">
@@ -79,19 +84,20 @@ export default function Footer1() {
                     </RevealText>
                   </h4>
                   <p className="mb-0 text-white opacity-75">
-                    Plot No. 16, Vasundhara, Ground Floor,<br />
-                    Behind ICICI Bank, Near Vyapari Dharamshala,<br />
-                    New Cotton Market, Hubli, Karnataka 580029
+                    418, Nakshatra VII, Raiya Main Road,<br />
+                    Bapa Sitaram Chowk,<br />
+                    Rajkot, Gujarat - 360007
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-xxl-3 col-lg-5 col-md-8 ms-lg-auto text-lg-end">
               <div className="at-footer-title-wrap">
-                <h6 className="text-white">+91 91104 24656</h6>
+                <h6 className="text-white">+91 97144 39005</h6>
+                <h6 className="text-white opacity-75 fz-font-sm">Care: +91 75758 01018</h6>
                 <h4 className="text-white text-decoration-underline text-wrap">
-                  <a href="mailto:vasundharafs@gmail.com" className="text-white text-decoration-underline">
-                    vasundharafs@gmail.com
+                  <a href="mailto:vashundhara.loan@gmail.com" className="text-white text-decoration-underline">
+                    vashundhara.loan@gmail.com
                   </a>
                 </h4>
                 <div className="at-footer-widget at-footer-link pt-50">

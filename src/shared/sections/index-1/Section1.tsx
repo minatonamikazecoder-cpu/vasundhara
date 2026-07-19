@@ -25,7 +25,7 @@ export default function Section1() {
             {/* at-hero-area */}
             <div
                 className="at-hero-area scene p-relative z-index-1 bg-position fix at-hero-spacing bg-primary-1 overflow-hidden"
-                data-background="/assets/imgs/pages/bg-img.png"
+                data-background="/assets/imgs/pages/bg-img.webp"
                 data-parallax-scene
                 data-scalar-x="18"
                 data-scalar-y="18"
@@ -47,14 +47,14 @@ export default function Section1() {
                         height={1043}
                         className="layer"
                         data-depth=".1"
-                        src="/assets/imgs/pages/img-1.png"
+                        src="/assets/imgs/pages/img-1.webp"
                         alt="Vasundhara Consultant"
                         style={{ width: "auto", height: "auto", alignSelf: "flex-end" }} loading="lazy" />
                 </div>
                 <div className="container p-relative">
                     <div className="p-absolute bottom-100 start-0 ms-5 mb-100 d-none d-lg-block">
                         <a
-                            href="mailto:vasundharafs@gmail.com"
+                            href="mailto:vashundhara.loan@gmail.com"
                             className="at-hero-button at-btn bg-transparent p-relative"
                         >
                             <img
@@ -179,8 +179,8 @@ export default function Section1() {
                             </div>
                         </div>
                         <div className="col-1 ms-auto text-end align-self-start rotate-90 order-xl-2 order-md-1 d-none d-md-block">
-                            <a href="mailto:vasundharafs@gmail.com" className="text-white fw-600">
-                                <span className="at_fade_anim">vasundharafs@gmail.com</span>
+                            <a href="mailto:vashundhara.loan@gmail.com" className="text-white fw-600">
+                                <span className="at_fade_anim">vashundhara.loan@gmail.com</span>
                             </a>
                         </div>
                     </div>

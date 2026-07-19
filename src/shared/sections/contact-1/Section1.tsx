@@ -152,18 +152,23 @@ export default function Section1() {
                                     <div>
                                         <h6 className="fw-600">Head Office</h6>
                                         <span className="fz-font-md neutral-500">
-                                            Plot No. 16, Vasundhara,
+                                            418, Nakshatra VII, Raiya Main Road,
                                             <br className="d-block" />
-                                            Hubli, Karnataka, India
+                                            Bapa Sitaram Chowk, Rajkot, Gujarat - 360007
                                             <br className="d-block" />
                                             Phone:{" "}
                                             <span className="neutral-900">
-                                                <a href="tel:+919110803505">+91 9110803505</a>
+                                                <a href="tel:+919714439005">+91 97144 39005</a>
+                                            </span>
+                                            <br className="d-block" />
+                                            Customer Care:{" "}
+                                            <span className="neutral-900">
+                                                <a href="tel:+917575801018">+91 75758 01018</a>
                                             </span>
                                             <br className="d-block" />
                                             Email:{" "}
                                             <span className="neutral-900">
-                                                <a href="mailto:vasundharafs@gmail.com">vasundharafs@gmail.com</a>
+                                                <a href="mailto:vashundhara.loan@gmail.com">vashundhara.loan@gmail.com</a>
                                             </span>
                                         </span>
                                     </div>

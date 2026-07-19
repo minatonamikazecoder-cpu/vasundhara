@@ -44,18 +44,22 @@ export default function Section9() {
                                         <div>
                                             <h6 className="fw-600 mb-10">Our Main Office</h6>
                                             <span className="fz-font-md neutral-500">
-                                                Plot No. 16, Vasundhara, Ground Floor,<br />
-                                                Behind ICICI Bank, Near Vyapari Dharamshala,<br />
-                                                New Cotton Market, Hubli, Karnataka 580029
+                                                418, Nakshatra VII, Raiya Main Road,<br />
+                                                Bapa Sitaram Chowk,<br />
+                                                Rajkot, Gujarat - 360007
                                                 <br /><br />
                                                 <strong>Phone:</strong>{" "}
                                                 <span className="neutral-900">
-                                                    <a href="tel:+919110424656">+91 91104 24656</a>
+                                                    <a href="tel:+919714439005">+91 97144 39005</a>
+                                                </span>
+                                                <span className="neutral-500 d-block mt-1">
+                                                    <strong>Customer Care:</strong>{" "}
+                                                    <a href="tel:+917575801018" className="neutral-900">+91 75758 01018</a>
                                                 </span>
                                                 <br />
                                                 <strong>Email:</strong>{" "}
                                                 <span className="neutral-900">
-                                                    <a href="mailto:vasundharafs@gmail.com">vasundharafs@gmail.com</a>
+                                                    <a href="mailto:vashundhara.loan@gmail.com">vashundhara.loan@gmail.com</a>
                                                 </span>
                                             </span>
                                         </div>

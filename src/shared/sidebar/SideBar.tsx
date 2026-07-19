@@ -118,8 +118,12 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
           <div className="at-offcanvas-top d-flex align-items-center justify-content-between">
             <div className="at-offcanvas-logo">
               <Link to="/" className="text-decoration-none d-inline-flex align-items-center gap-2">
-                <img height={55} src="/assets/imgs/template/logo/favicon.png" alt="Vasundhara Logo" style={{ height: "55px", width: "auto", objectFit: "contain" }} />
-                <h6 className="fw-700 fz-28 mb-0">Vasundhara</h6>
+                <img 
+                  src="/assets/imgs/template/logo/logo-w-lg.png" 
+                  alt="Vasundhara Logo" 
+                  style={{ height: "55px", width: "auto", objectFit: "contain" }} 
+                  loading="lazy" 
+                />
               </Link>
             </div>
             <div className="at-offcanvas-close-btn">
@@ -154,20 +158,25 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
             <h5 className="at-offcanvas-title sm">Get in touch</h5>
             <ul>
               <li>
-                <a className="fz-font-lg" href="tel:+919110424656">
-                  +91 91104 24656
+                <a className="fz-font-lg" href="tel:+919714439005">
+                  +91 97144 39005
                 </a>
               </li>
               <li>
-                <a className="fz-font-lg" href="mailto:vasundharafs@gmail.com">
-                  vasundharafs@gmail.com
+                <a className="fz-font-lg" href="tel:+917575801018">
+                  +91 75758 01018
+                </a>
+              </li>
+              <li>
+                <a className="fz-font-lg" href="mailto:vashundhara.loan@gmail.com">
+                  vashundhara.loan@gmail.com
                 </a>
               </li>
               <li>
                 <a className="fz-font-lg" href="#" onClick={(e) => e.preventDefault()}>
-                  Plot No. 16, Vasundhara, Ground Floor,<br />
-                  Behind ICICI Bank, Near Vyapari Dharamshala,<br />
-                  New Cotton Market, Hubli, Karnataka 580029
+                  418, Nakshatra VII, Raiya Main Road,<br />
+                  Bapa Sitaram Chowk,<br />
+                  Rajkot, Gujarat - 360007
                 </a>
               </li>
             </ul>
@@ -188,13 +197,11 @@ export default function SideBar({ open, hamburgerOpen, onClose }: SideBarProps) 
             <div className="at-header-logo d-flex justify-content-between align-items-center mb-50">
               <Link to="/" className="text-decoration-none d-inline-flex align-items-center gap-2">
                 <img
-                  className="dark-mode-invert"
-                  src="/assets/imgs/template/logo/favicon.png"
+                  src="/assets/imgs/template/logo/logo-w-lg.png"
                   alt="Vasundhara Logo"
-                  height={55}
                   style={{ height: "55px", width: "auto", objectFit: "contain" }}
+                  loading="lazy"
                 />
-                <h6 className="fw-700 fz-28 mb-0">Vasundhara</h6>
               </Link>
               <span className="hamburger-close-btn close-sidebar" role="button" tabIndex={0} aria-label="Close" onClick={onClose}>
                 <CloseIconSvg />

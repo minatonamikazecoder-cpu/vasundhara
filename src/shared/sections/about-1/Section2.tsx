@@ -32,7 +32,7 @@ const JOURNEY_ITEMS = [
         date: "2024 — Inception & Foundation",
         title: "Establishing Vasundhara Financial Services",
         company: null,
-        desc: "Founded in Hubli to address the credit gap for MSMEs, providing local businesses with direct access to tailored capital and machinery loans.",
+        desc: "Founded in Rajkot to address the credit gap for MSMEs, providing local businesses with direct access to tailored capital and machinery loans.",
     },
     {
         date: "2025 — Network Expansion",

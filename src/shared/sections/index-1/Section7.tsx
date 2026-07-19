@@ -89,7 +89,7 @@ export default function Section7() {
                                     </div>
                                     <img
                                         className="p-absolute bottom-0 start-0 m-4"
-                                        src="/assets/imgs/template/logo/logo.png"
+                                        src="/assets/imgs/template/logo/logo-w-lg.png"
                                         alt="Vasundhara Logo"
                                         width={150}
                                         height={45}
@@ -132,9 +132,8 @@ export default function Section7() {
                                 <div className="col-md-6 col-12">
                                     <div className="hover-unborder">
                                         <div className="bg-neutral-0 rounded-4 px-5 py-3">
-                                            <h4 className="d-flex justify-content-between align-items-center mb-0">
+                                            <h4 className="mb-0">
                                                 <span>50+ Cr</span>
-                                                <span>+</span>
                                             </h4>
                                         </div>
                                         <div className="bg-neutral-0 rounded-4 p-5 mt-2">
@@ -168,9 +167,8 @@ export default function Section7() {
                                             </div>
                                         </div>
                                         <div className="bg-neutral-0 rounded-4 px-5 py-3">
-                                            <h4 className="d-flex justify-content-between align-items-center mb-0">
+                                            <h4 className="mb-0">
                                                 <span>10+</span>
-                                                <span>+</span>
                                             </h4>
                                         </div>
                                     </div>

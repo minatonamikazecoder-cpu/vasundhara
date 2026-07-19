@@ -113,13 +113,13 @@ const SOCIAL_ITEMS = [
 const OFFICES = [
     {
         icon: OFFICE_ICON_1,
-        title: "Hubli Head Office",
-        address: "Plot No. 16, Vasundhara,",
-        city: "Hubli, Karnataka, India",
-        phone: "+91 9110803505",
-        phoneHref: "tel:+919110803505",
-        email: "vasundharafs@gmail.com",
-        emailHref: "mailto:vasundharafs@gmail.com",
+        title: "Rajkot Head Office",
+        address: "418, Nakshatra VII, Raiya Main Road,",
+        city: "Bapa Sitaram Chowk, Rajkot, Gujarat",
+        phone: "+91 97144 39005",
+        phoneHref: "tel:+919714439005",
+        email: "vashundhara.loan@gmail.com",
+        emailHref: "mailto:vashundhara.loan@gmail.com",
     },
 ];
 

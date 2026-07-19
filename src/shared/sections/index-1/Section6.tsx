@@ -9,9 +9,9 @@ const TESTIMONIAL_SOURCES = [
         logo: "/assets/imgs/icons/brand-7.webp",
         logoWidth: 86,
         logoHeight: 25,
-        name: "Rajesh Kulkarni",
+        name: "Rajesh Patel",
         position: "Managing Director",
-        company: "Kulkarni Manufacturing, Hubli",
+        company: "Patel Manufacturing, Rajkot",
         comment:
             "Vasundhara Financial Services secured our machinery loan of 2.5 Cr in record time. Excellent coordination and transparency.",
     },
@@ -21,9 +21,9 @@ const TESTIMONIAL_SOURCES = [
         logo: "/assets/imgs/icons/brand-8.webp",
         logoWidth: 101,
         logoHeight: 25,
-        name: "Deepa Patil",
+        name: "Deepa Shah",
         position: "Homeowner",
-        company: "Dharwad",
+        company: "Rajkot",
         comment:
             "Hassle-free housing loan assistance. The advisors at Vasundhara walked us through every step and got us the best interest rates.",
     },
@@ -33,9 +33,9 @@ const TESTIMONIAL_SOURCES = [
         logo: "/assets/imgs/icons/brand-9.webp",
         logoWidth: 119,
         logoHeight: 25,
-        name: "Amit Desai",
+        name: "Amit Mehta",
         position: "Founder & CEO",
-        company: "Desai Tech Solutions",
+        company: "Mehta Tech Solutions, Ahmedabad",
         comment:
             "We were looking for working capital and unsecured funding. Vasundhara made the bank approval process seamless. Highly recommended!",
     },
@@ -129,7 +129,7 @@ export default function Section6() {
                             </SwiperDynamic>
                         </div>
                         <div className="col-12 text-center pt-50 z-index-1">
-                            <Link to="mailto:vasundharafs@gmail.com" className="at-btn bg-transparent p-relative">
+                            <Link to="mailto:vashundhara.loan@gmail.com" className="at-btn bg-transparent p-relative">
                                 <img
                                     className="badge-zoon-in"
                                     src="/assets/imgs/icons/badge-2.svg"

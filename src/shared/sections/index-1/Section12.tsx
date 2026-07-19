@@ -54,47 +54,59 @@ export default function Section12() {
     return (
         <div
             ref={sectionRef}
-            className="at-banner-thumb fix w-100 scale-up-img p-relative changeless d-none d-lg-block"
+            className="at-banner-thumb fix w-100 scale-up-img p-relative changeless"
+            style={{ height: "auto", minHeight: "650px", display: "flex", alignItems: "stretch" }}
         >
             <div ref={scaleUpRef} className="scale-up position-absolute top-0 bottom-0 start-0 end-0 overflow-hidden">
                 <img
                     data-speed=".4"
                     className="img-cover"
                     src="/assets/imgs/pages/img-22.png"
-                    alt="orisa" loading="lazy" />
+                    alt="Vasundhara Office Banner" loading="lazy" />
+                {/* Brand-colored dark overlay for text contrast & premium look */}
+                <div 
+                    className="position-absolute top-0 bottom-0 start-0 end-0" 
+                    style={{ 
+                        background: "linear-gradient(180deg, rgba(10, 28, 53, 0.5) 0%, rgba(10, 28, 53, 0.85) 100%)", 
+                        zIndex: 1 
+                    }} 
+                />
             </div>
-            <div className="position-absolute top-0 bottom-0 start-0 end-0">
-                <div className="container">
+            <div className="position-relative w-100 d-flex flex-column justify-content-between" style={{ zIndex: 2, padding: "60px 0" }}>
+                <div className="container d-flex flex-column justify-content-between h-100">
                     <div className="row">
                         <div className="col-12">
-                            <div className="d-flex justify-content-between pt-100">
+                            <div className="d-flex justify-content-between align-items-center flex-wrap gap-3">
                                 <div className="at-header-logo">
-                                    <Link to="/">
+                                    <Link to="/" className="d-inline-flex align-items-center gap-2 text-decoration-none">
                                         <img
-                                            data-width="40"
-                                            src="/assets/imgs/template/logo/favicon.png"
-                                            alt="Vasundhara Logo"
-                                            width={40}
-                                            height={40}
-                                            style={{ width: "auto", height: "auto" }} loading="lazy" />
-                                        <h6 className="fw-700 fz-24 text-white mb-0">Vasundhara</h6>
+                                            src="/assets/imgs/template/logo/logo-w-lg.png"
+                                            alt="Vasundhara Financial Services"
+                                            style={{ 
+                                                height: "48px", 
+                                                width: "auto", 
+                                                objectFit: "contain",
+                                                filter: "brightness(0) invert(1)"
+                                            }}
+                                            loading="lazy"
+                                        />
                                     </Link>
                                 </div>
-                                <Link
-                                    className="bg-transparent border px-3 py-1 rounded-pill common-white fz-font-lg"
-                                    to="#"
+                                <span
+                                    className="bg-transparent border px-3 py-1 rounded-pill common-white fz-font-md"
+                                    style={{ backdropFilter: "blur(5px)" }}
                                 >
                                     Hours: 9:30 AM - 6:30 PM
-                                </Link>
+                                </span>
                             </div>
                         </div>
                     </div>
-                    <div className="row pt-250 align-items-end">
-                        <div className="col-lg-5 col-md-6">
-                            <h2 className="common-white">
+                    <div className="row align-items-end mt-auto pt-80 g-4">
+                        <div className="col-lg-6 col-md-12">
+                            <h2 className="common-white fz-font-3xl mb-10">
                                 Let&apos;s Secure <br /> Your Financial Future
                             </h2>
-                            <div className="d-flex gap-4 align-items-center pt-30">
+                            <div className="d-flex gap-4 align-items-center flex-wrap pt-20">
                                 <Link
                                     className="at-btn at-btn-border-white common-white rounded-0"
                                     to="/contact"
@@ -111,10 +123,10 @@ export default function Section12() {
                                 <span className="common-white fz-font-sm">[ Mon - Sat ]</span>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 ms-auto text-end">
-                            <span className="common-white fz-font-lg">
+                        <div className="col-lg-5 col-md-12 ms-auto">
+                            <p className="common-white fz-font-md opacity-75 mb-0 text-start text-lg-end">
                                 [ A financial consulting firm facilitating tailor-made loan options. At Vasundhara, we blend expert consultation, quick approvals, and trusted bank tie-ups to help you grow. ]
-                            </span>
+                            </p>
                         </div>
                     </div>
                 </div>

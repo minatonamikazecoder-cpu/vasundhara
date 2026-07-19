@@ -116,7 +116,7 @@ export default function Section11({ classList = "" }: { classList?: string }) {
                                              </div>
                                              <div
                                                  id={item.id}
-                                                 className={`at-faq-collapse collapse${isOpen ? " show" : ""}`}
+                                                 className={`at-faq-content-wrapper${isOpen ? " show" : ""}`}
                                                  style={{ display: isOpen ? "block" : "none" }}
                                              >
                                                  <div className="at-faq-body">
